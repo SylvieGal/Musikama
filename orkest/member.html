@@ -1,73 +1,167 @@
 
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang ="fr">
     <head>
-        <meta charset="utf-8" lang=fr/>
-        <link rel="stylesheet" href="member.css"/>
-    </head>
-    <title>Espace Membre</title>
-    <body>
-       
-            <header id="navbar" style="background-color: greenyellow">
-                <nav class="nav">
-                    <a href="base.html"></a>
-    
-                    <a class="nav_logo" id="logo">Musikama</a>
-                    <a class="nav_motto" id="motto">Le plaisir de jouer ensemble</a>
-                </nav>
-                <a class="language" id="lang"
-                    >Langue
-                    <!---<ol>
-                        <a href="french.html">Fr</a
-                        ><a href="english.html">En</a
-                        ><a href="dutch.html">Nl</a>
-                    </ol>---></a
-                >
-                <div class="rappel">
-                    Rappel : N'oubliez pas notre rendez-vous du
-                </div>
-            </header>
-    
-            <section id="main">
-                <aside class="main_menu">
-                    <header>
-                        <i class="fas fa-bars"></i>
-                        <h1>Menu</h1>
-                    </header>
-                    <nav>
-                        <ol id="list">
-                            <a href="welcome.html">Accueil</a>
-                            <a href="introduction.html">Présentation</a>
-                            <a href="managers.html">Nos Dirigeants</a>
-                            <a href="conductors.html">Nos Chefs</a>
-                            <a href="evenements.html">Nos Evènements</a>
-                            <a href="join_us.html">Nous rejoindre</a>
-                            <a href="members.html">Espace membre</a>
-                        </ol>
-                    </nav>
-                </aside>  
-        <div class="member">
-            <article>
-                <h2>Réservé aux membres</h2>
-                <input type ="button" value=" Se connecter"></input>          
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content="index,nofollow"/>
+        <meta name ="description" content=" Envie de rejoindre un orchestre symphonique d'amateurs? Ne vous demandez plus qui nos membres sont ! Venez les rencontrer lors de notre répétition"/>
+        
+        <title>Espace Membre</title>
 
+        <!--<link rel="stylesheet" href="css/pages/member.css"/>-->
+        <link rel="stylesheet" href="css/normalizer.css" />
+        <link rel = "stylesheet" href ="css/frame.css"/>
+        <link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/fonts.css"/>
+        <link
+            rel="stylesheet"
+            href="css/tablet/member.css"
+            media="screen and (max-width:900px)"
+        />
+        <link
+            rel="stylesheet"
+            href="css/gsm/member.css"
+            media="screen and (max-width:400px)"
+        />
+
+        <link rel = "stylesheet" href="css/desktop/member.css" media =" screen and (min-width:900px)"/>
+        <script
+            src="https://kit.fontawesome.com/cadfef2fa3.js"
+            crossorigin="anonymous"
+            async
+        ></script>
+      
+    </head>
+   
+    <body>
+        <header id ="header" style="background-color: greenyellow">
+            <div class="headerintro">
+                <i class="fa-solid fa-record-vinyl"></i>
+                <h1 id="logo">Camerata</h1>
+                <p id="motto">Le plaisir de jouer ensemble</p>
+            </div>
+            <!--<a id="lang"
+                >Langue
+                <ol>
+                    <a href="french.html">Fr</a
+                    ><a href="english.html">En</a
+                    ><a href="dutch.html">Nl</a>
+                </ol></a
+            >
+            <label class="rappel">
+                <input
+                    type="text"
+                    name="rappel"
+                    value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
+                />
+            </label>-->
+            <nav class="language">
+                <a href="" class = "navi"></a>
+                <form action = "" class="box">
+                    <select>
+                        <option value = "" >Langue </option>
+                        <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
+                        <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
+                        <option value ="english">English<a class ="en" href="english.html">En</a></option>
+                    </select>
+                    <!--<input type = "Checkbox" id = "lang"/>
+                    <input type="submit" value ="Valider">
+                    <label for = "lang"></label>-->
+                </form>
+            </nav>
+        </header>
+
+        <section id="main" style="background-color:cyan">
+            <article id="menu">
+                <header>
+                    <i class="fas fa-bars"></i>
+                    <h2>Menu</h2>
+                    </header>
+                <ul id="list">
+                        <a href="welcome.html">Accueil</a>
+                        <a href="introduction.html">Présentation</a>
+                        <a href="managers.html">Nos Dirigeants</a>
+                        <a href="conductor.html">Nos Chefs</a>
+                        <a href="events.html">Nos Evènements</a>
+                        <a href="join_us.html">Nous rejoindre</a>
+                        <a href="member.html">Espace membre</a>
+                </ul>
+                   
             </article>
-        </div>
+            <article id = "page"
+                    class="page6"
+                    style="background-color: cyan"
+                >
+                    <div id="signin">
+                        <h2>Réservé aux membres</h2>
+                    <form action ="" id ="signinForm" method ="GET">
+                        <label for ="email">Email</label>
+                        <input type ="text" name ="email" placeholder ="Entrez votre email" value ="email"/>
+                        <label for = "password">Mot de passe </label>
+                        <input type ="text" name = "password" placeholder = "Entrez votre mot de passe "value ="email"/>
+                        <button type ="submit" name ="submit" placeholder="Valider" value ="Valider">Valider</button>
+                       <p>Vous avez oublié votre mot de passe? Cliquez ici <a href ="info@cameratalinkebeek.be"></a></p>
+                    </form> 
+                </div> 
+                <article id ="news">
+                    
+                    <a href ="news" >Actualités</a>
+                    <article class = "hebdo">
+                        <h2>Dimanche prochain </h2>
+                        <p>
+                            <h3>Au programme:</h3>
+                            <ul>
+                                <li>Star Wars</li>
+                                <li>Dallas</li>
+                                <li>La flûte enchantée</li>
+                            </ul>
+                            La répétition est confirmée dans notre local habituel. 
+                        </p>
+                    </article>
+                    <article class = "Ste_Cecile">
+                            <h2>Sainte Cécile </h2>
+                            <p>
+                                Cette année , nous espérons que nous serons en mesure de nous retrouver tous autour d'un verre et de collations.
+                                Dans cette optique , nous vous préparons une sainte Cécile différente des autres années avec:
+                                <ul class= "summary">
+                                    <li> notre nouveau chef</li> 
+                                    <li>la présentation un projet que le Comité souhaite mener à bien dans les deux ans à venir.</li>
+                                </ul> 
+                                
+                                <span>Réservez cette date ! La présentation du projet sera assez longue mais bien nécessaire et passionnante par Alain et Anthony</span> 
+                            </p>
+                    </article>
+                    <article class ="wanted">
+                        <h2>Appel à de nouveaux musiciens </h2>
+                        <img src ="./images/247267108_6571221676285492_6170040274579046178_n.jpg"alt ="annonce pour trouver de nouveaux musiciens"/>
+                        <p>
+                            Vous êtes musicien et souhaitez vous essayer au jeu en orchestre symphonique?
+                            Camerata est assurément LA formation qu'il vous faut!
+                            Dans une ambiance toujours chaleureuse et amicale, nous prenons plaisir à découvrir les grands compositeurs classiques, mais également
+                            contemporains, d'ici et d'ailleurs. Et comme la musique ne connait aucune frontière, ni de temps, ni de lieu, ni de style,
+                            notre prochain projet sera entièrement dédié à la musique de film.
+                        </p>
+                    </article>
+                </article>
+            </article>
+        </section>
         <footer id="footer">
             <article>
-                <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
+                <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
                     <span>tél: 0498 780 000</span>
-                    <span>email:info@musikama.com</span>
+                    <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        <i class="fab fa-facebook"></i>
-                        <a href="https://www.facebook.com/orchestrecamerata/ ">
+                        
+                        <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
         </footer> 
-
-</body>
+        <script> scr ="js/member.js"</script> 
+        <script>src = "js/frame.js"</script>
+    </body>
 </html>

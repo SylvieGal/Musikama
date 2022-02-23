@@ -1,122 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="utf-8" lang="fr" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="conductors.css" />
-
+        <meta name="title" content="index,nofollow"/>
+        <meta name ="description" content=" Camerata, pour s'épanouir dans son programme symphonique éclectique,a été dirigé par Gabriele Camacho, Quentin Mourier, David Miller,  Laurent Beeckmans, Francis Mourey et bien d'autres. Aujourd'hui Arkanyan conduit notre orchestre pour réaliser des projets très ambitieux comme la musique de films."/>
+        
+        <title>Nos chefs</title>
+        <link rel="alternate" hreflang="Fr" href="french.html" />
+        <link rel ="alternate" hreflang ="En" href ="english.html"/>
+        <link rel ="alternate" hreflang ="Nl" href ="dutch.html"/>
+        <link rel="stylesheet" href="css/normalizer.css" />
+        <link rel = "stylesheet" href ="css/frame.css"/>
+        <!--<link rel = "stylesheet" href ="css/color.css"/>
+            <link rel = "stylesheet" href ="css/fonts.css"/>-->
+        <link rel="stylesheet" href="css/gsm/conductors.css"media ="screen and (max-width:370px)"  />
+        <link rel="stylesheet" href="css/tablet/conductors.css"media="screen and (max-width:900px)"/>
+        <link rel="stylesheet" href="css/desktop/conductors.css"media="screen and (min-width:901px)"/>
+ <!--<link rel="stylesheet" href="css/gsm/frame.css"/>
+ -->
         
         <script
             src="https://kit.fontawesome.com/cadfef2fa3.js"
             crossorigin="anonymous"
             defer
         ></script>
-
-       <title>Nos chefs</title>
+        
     </head>
     <body>
-        <header id="navbar" style="background-color: greenyellow">
-            <nav class="nav">
-                <a href="base.html"></a>
-
-                <a class="nav_logo" id="logo">Musikama</a>
-                <a class="nav_motto" id="motto">Le plaisir de jouer ensemble</a>
-            </nav>
-            <a class="language" id="lang"
-                >Langue
-                <!---<ol>
-                    <a href="french.html">Fr</a
-                    ><a href="english.html">En</a
-                    ><a href="dutch.html">Nl</a>
-                </ol>---></a
-            >
-            <div class="rappel">
-                Rappel : N'oubliez pas notre rendez-vous du
+        <header id ="header" style="background-color: greenyellow">
+            <div class="headerintro">
+                <div class="logoicon">
+                    <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
+                </div>
+                <h1 class="logo">Camerata</h1>
+                <p class="motto">Le plaisir de jouer ensemble</p>
             </div>
-        </header>
-
-        <section id="main" style="background-color:cyan">
-            <article class="main_menu" style="background: rgb(243, 229, 203);">
-                <header>
+            <nav class ="language">
+                <a href="" class = "navp"></a>
+                <form action = "" class="box">
+                    <select>
+                        <option value ="français">FR<a class = "fr" href="french.html"></a></option>
+                        <option value="nederlands" >NL<a class = "nl" href="dutch.html"></a></option>
+                        <option value ="english">EN<a class ="en" href="english.html"></a></option>
+                    </select>
+                    
+                </form>
+            </nav>
+                
+        </header>       
+        <section id="main" >
+            <article id="menu" style = "background-color: aqua;" >
+                <div class = "menugsm">
                     <i class="fas fa-bars"></i>
-                    <h1>Menu</h1>
-                </header>
-                <nav>
-                    <ol id="list">
-                        <a href="welcome.html">Accueil</a>
-                        <a href="introduction.html">Présentation</a>
-                        <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductors.html">Nos Chefs</a>
-                        <a href="evenements.html">Nos Evènements</a>
-                        <a href="join_us.html">Nous rejoindre</a>
-                        <a href="members.html">Espace membre</a>
-                    </ol>
-                </nav>
-            </article>        
-    
-   
-            <article class="main_conductors"  style="background-color:cyan">
-                <div class="nos_chefs">
-                    <header class="conductor_header"><h2>Nos chefs actuels</h2> </header>
-                    <article class="conductor_one" style="background-color:violet">
-                    <a href="#Labaguet ">
+                    <form action="" name="choice">
+                        <select onchange ="location =this.value">
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class ="page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</value></option>
+                            <option value = "events.html" class = "page4">Nos Evènements</></option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</value=></option>
+                            <option value = "member.html" class = "page6">Espace-membre</value=></option>
+                        </select>                        
+                    </form>
+                </div>
+                <h2>Menu</h2>
+
+                <ul id="list">
+                        
+                        <a class = "page1" href="introduction.html">Présentation</a>
+                        <a class = "page2" href="managers.html">Nos Dirigeants</a>
+                        <a class = "page3" href="conductors.html">Nos Chefs</a>
+                        <a class = "page4"  href="events.html">Nos Evènements</a>
+                        <a class = "page5" href="join_us.html">Nous rejoindre</a>
+                        <a class = "page6" href="member.html">Espace-membre</a>
+                </ul>
+                   
+            </article>
+
+            <article id = "page" class=" page3" >
+                
+                <h2 class ="pagetitle"style="background-color:rgb(180, 33, 180)">Nos chefs actuels</h2>
+                <div class = "conductors">
+                    <article class="conductorone" style="background-color:violet">
+                        <a href="#Labaguet ">
                             <figure>
-                                
                                 <img class="mi" src="mi.jpg" alt="photo_mi" />
                                 <figcaption>
                                     <h3>Mi Labaguet</h3>
-                                    <p>Diplomé du conservatoire de Bruxelles (1er prix de Chef d'orchestre, de piano et de harpe)
-                                Premier à réclamer sa pause café lors des répétitions 
+                                    <p>Diplomé du conservatoire de Bruxelles (1er prix de Chef d'orchestre, de piano et de harpe)<br/>
+                                        Premier à réclamer sa pause café lors des répétitions 
                                     </p>
                                 </figcaption>
                             </figure>
                         </a>
                     </article>
-                    <article class="conductor_two" style="background-color:deepskyblue">
+                    <article class="conductortwo" style="background-color:deepskyblue">
                         <a href="#Paulo">
                             <figure>
                                 <img class="walter"src="walter.jpg" alt="photo_walter"/>
                                 <figcaption>
                                     <h3>Walter Paulo</h3>
-                                    <p>
-                                        Chef d'orchestre de renommée internationale a dirigé pour de grands orchestres(Bruxelles, Liege,Paris,...).
-                                        Maîtrise aussi le violon, le biniou,la guimbarde, l'orgue et le piano.
+                                    <p>Chef d'orchestre de renommée internationale a dirigé pour de grands orchestres(Bruxelles, Liège,Paris,...).<br/>
+                                        Maîtrise aussi le violon, le biniou,la guimbarde, l'orgue et le piano.<br/>
                                         Ne se fait pas prier pour blaguer 
                                     </p>
                                 </figcaption>
-                            
+                                
                             </figure>
                         </a>
                     </article>
-                    <article id="others" class="conductor_other" style="background-color: goldenrod;">
-                        <p>Ceux qui nous ont dirigé et avec qui nous avons eu aussi beaucoup de plaisirs musicaux :
-                            <ol>
-                                <li>Francis Mourey, violoncelliste professionnel </li>
-                                <li>David Miller , Chef d'orchestre américain</li>
-                                <li>Laurent Beeckmans , pianiste , percussionniste et trompettiste </li>
-                                <li>Quentin Mourier , Chef d'orchestre</li> 
-                            </ol>
-                            
-                        </p>
-                
-                    </article>
-                </div>    
+                </div>
+                <article class ="others"  style="background-color: goldenrod;">
+                    <h2 class="othertitle" style="background-color:rgb(180, 33, 180)">Nos chefs précédents</h2>
+                    <p>Ceux qui nous ont dirigés et avec qui nous avons eu aussi beaucoup de plaisirs musicaux :
+                        <ul>
+                            <li><span class =" firstletter">F</span>rancis <span class="firstletter">M</span>ourey, chef d'orchestre français, violoncelliste professionnel </li>
+                            <li><span class =" firstletter">D</span>avid <span class =" firstletter">M</span>iller, chef d'orchestre américain de renommée internationale</li>
+                            <li><span class =" firstletter">L</span>aurent <span class =" firstletter">B</span>eeckmans, chef d'orchestre belge, pianiste, percussionniste et trompettiste </li>
+                            <li><span class =" firstletter">Q</span>uentin <span class =" firstletter">M</span>ourier, chef d'orchestre français, pianiste professionnel</li> 
+                            <li><span class =" firstletter">G</span>abriele <span class =" firstletter">C</span>amacho, chef d'orchestre mexicain, percussionniste professionnel</li>
+                        </ul>
+                        
+                    </p>
+                    
+                </article>
             </article>
         </section>
-        <footer id="footer">
+        <footer id="footer"  style = "background-color: red;">
+
             <article>
-                <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
+                <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
-                    <span>tél: 0498 780 000</span>
-                    <span>email:info@musikama.com</span>
+                    <span>tél: 0470.20.61.57</span>
+                    <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        <i class="fab fa-facebook"></i>
-                        <a href="https://www.facebook.com/orchestrecamerata/ ">
+        
+                        <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
         </footer>
+        
+        <script>src = "js/event_popup.js"</script>
+        <script>src = "js/frame.js"</script>
     </body>
 </html>

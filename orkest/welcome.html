@@ -2,126 +2,147 @@
 
 <html>
     <head>
+    
         <meta charset="utf-8" lang="fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="stylesheet" href="welcome.css" />
-
-        <link
-            rel="stylesheet"
-            href="welcome_tablett.css"
-            media="screen and (max-width:768px)"
+        <meta name="title" content="index,nofollow" />
+        <meta
+            name="description"
+            content="Envie de rejoindre un orchestre symphonique d'amateurs? Le sympathique orchestre Camerata de Belgique vous accueille pour interprèter des oeuvres de musique classique mais aussi un programme éclectique.Tous nos musiciens ont plaisir à jouer ensemble"
         />
+        <title>Camerata</title>
+        <link rel="stylesheet" href="css/normalizer.css" />
+        <link rel="stylesheet" href="css/frame.css" />
+        <link rel="stylesheet" href="css/color.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/welcome_gsm.css" />
         <link
             rel="stylesheet"
-            href="welcome_gsm.css"
-            media="screen and (max-width:620px)"
+            href="css/welcome_tablett.css"
+            media="screen and (min-width:600px)"
+        />
+
+        <link
+            rel="stylesheet"
+            href="css/pages/welcome.css"
+            media="screen and (min-width:900px)"
         />
         <script
             src="https://kit.fontawesome.com/cadfef2fa3.js"
             crossorigin="anonymous"
             defer
         ></script>
-
-        <title>Musikama</title>
+ 
     </head>
     <body>
-        <header id="navbar" style="background-color: greenyellow">
-            <nav class="nav">
-                <a href="base.html"></a>
-
-                <a class="nav_logo" id="logo">Musikama</a>
-                <a class="nav_motto" id="motto">Le plaisir de jouer ensemble</a>
-            </nav>
-            <a class="language" id="lang"
-                >Langue
-                <!--<ol>
-                    <a href="french.html">Fr</a
-                    ><a href="english.html">En</a
-                    ><a href="dutch.html">Nl</a>
-                </ol>--></a
-            >
-            <div class="rappel">
-                <p>Rappel : N'oubliez pas notre rendez-vous du... à ...</p>
-            </div>
+        <header>
+            <article id="header" style="background-color: greenyellow">
+                <div id="headerintro">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                    <h1 id="logo">Camerata</h1>
+                    <p id="motto">Le plaisir de jouer ensemble</p>
+                </div>
+                <!--<a id="lang"
+                    >Langue
+                    <ol>
+                        <a href="french.html">Fr</a
+                        ><a href="english.html">En</a
+                        ><a href="dutch.html">Nl</a>
+                    </ol></a
+                >
+                <label id="rappel">
+                    <input
+                        type="text"
+                        name="rappel"
+                        value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
+                    />
+                </label>-->
+                <nav class="language">
+                    <a href="" class = "navi"></a>
+                    <form action = "" class="box">
+                        <select>
+                            <option value = "" >Langue </option>
+                            <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
+                            <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
+                            <option value ="english">English<a class ="en" href="english.html">En</a></option>
+                        </select>
+                        <!--<input type = "Checkbox" id = "lang"/>
+                        <input type="submit" value ="Valider">
+                        <label for = "lang"></label>-->
+                    </form>
+                </nav>
+            </article>
         </header>
-
         <section id="main">
-            <aside class="main_menu">
+            <article id="menu">
                 <header>
                     <i class="fas fa-bars"></i>
-                    <h1>Menu</h1>
+                    <h2>Menu</h2>
                 </header>
-                <nav>
-                    <ol id="list">
-                        <a href="welcome.html">Accueil</a>
-                        <a href="introduction.html">Présentation</a>
-                        <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductor.html">Nos Chefs</a>
-                        <a href="evenements.html">Nos Evènements</a>
-                        <a href="join_us.html">Nous rejoindre</a>
-                        <a href="member.html">Espace membre</a>
-                    </ol>
-                </nav>
-            </aside>
-            <article
-                class="main_title"
-                id="title"
-                style="background-color: cyan"
-            >
-                <div class="group">Bienvenue chez Musikama</div>
+                <ul id="list">
+                   <!--<a href = "welcome.html">Accueil</a>-->
+                    <a href="introduction.html">Présentation</a>
+                    <a href="managers.html">Nos Dirigeants</a>
+                    <a href="conductor.html">Nos Chefs</a>
+                    <a href="evenements.html">Nos Evènements</a>
+                    <a href="join_us.html">Nous rejoindre</a>
+                    <a href="member.html">Espace membre</a>
+                </ul>
+            </article>
+           <!-- <article id="page" style="background-color: cyan">
+                <div>Bienvenue chez Musikama</div>
             </article>
             <article
-                class="main_introduction"
+                
                 id="intro"
                 style="background-color: cyan"
             >
                 <div>Présentation</div>
             </article>
 
-            <article class="main_ceo" id="ceo" style="background-color: cyan">
+            <article id="ceo" style="background-color: cyan">
                 <div>Nos dirigeants</div>
             </article>
             <article
-                class="main_conductors"
+              
                 id="chiefs"
                 style="background-color: cyan"
             >
                 <div>Nos chefs</div>
             </article>
-            <article class="main_eve" id="eve" style="background-color: cyan">
+            <article id="eve" style="background-color: cyan">
                 <div>Nos évènements</div>
             </article>
             <article
-                class="main_signup"
+                
                 id="signup"
                 style="background-color: cyan"
             >
                 <div>s'incrire</div>
             </article>
-            <article
-                class="main_member"
+            <article--
+               
                 id="member"
                 style="background-color: cyan"
             >
                 <div>Espace membre</div>
-            </article>
+            </article-->
         </section>
 
-        <footer id="footer">
-            <article>
-                <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
-                <div class="contact">
-                    <span>tél: 0498 780 000</span>
-                    <span>email:info@musikama.com</span>
-                    <div>
-                        <i class="fab fa-facebook"></i>
-                        <a href="https://www.facebook.com/orchestrecamerata/ ">
+        <footer id="footer style background-color: yellow" >
+            <address>
+                adresse:Hoollestr 47, B-1234 Linkebos
+                
+                <a href="tel:+32498780000">tél: (32)498 780 000</a>
+                <a href ="mailto:info@musikama.com">email:info@musikama.com</a>
+                <div>
+                        <a href="https://www.facebook.com/orchestrecamerata/ "
+                            ><i class="fab fa-facebook"></i>
                         </a>
-                    </div>
-                    <p>Copyright Sylga. me@mysite.com</p>
                 </div>
-            </article>
+                <p>Copyright Sylga. me@mysite.com</p>
+            </address>
+           
         </footer>
     </body>
 </html>

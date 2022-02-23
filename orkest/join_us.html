@@ -1,83 +1,164 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="fr">
     <head>
-        <meta charset ="uft-8" lang=fr/>
-        <link rel="stylesheet"  href="join_us.css"/>
+        <meta charset ="uft-8" />
+        <meta name = "viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content="index,nofollow"/>
+        <meta name ="description" content="  Un orchestre symphonique où tout le monde est bienvenu.Tout musicien peut rejoindre notre .Aucun des musiciens ne passe une audition. Le plaisir de jouer d'un instrument avant tout ."/>
+     
         <title>Adhésion</title>
+     
+        <link rel="stylesheet" href="css/normalizer.css" />
+        <link rel = "stylesheet" href ="css/frame.css"/>
+        <link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/fonts.css"/>
+        <link
+            rel="stylesheet"
+            href="css/desktop/join_us.css"
+            media="screen and (min-width:900px)"
+        />
+        <link
+            rel="stylesheet"
+            href="css/gsm/join_us.css"
+            media="screen and (max-width:400px)"
+        />
+        <link rel ="stylesheet" href = "css/tablet/join_us.css" media = "screen and (max-width:1000px)"/>
+        <script
+            src="https://kit.fontawesome.com/cadfef2fa3.js"
+            crossorigin="anonymous"
+            async
+        ></script>
+
+       
 
     </head>
     <body>
-        <header id="navbar" style="background-color: greenyellow">
-            <nav class="nav">
-                <a href="base.html"></a>
-
-                <a class="nav_logo" id="logo">Musikama</a>
-                <a class="nav_motto" id="motto">Le plaisir de jouer ensemble</a>
-            </nav>
-            <a class="language" id="lang"
+        <header id ="header" style="background-color: greenyellow">
+            <div class="headerintro">
+                <i class="fas fa-music"></i>
+                <h1 id="logo">Camerata</h1>
+                <p id="motto">Le plaisir de jouer ensemble</p>
+            </div>
+            <!--<a id="lang"
                 >Langue
-                <!---<ol>
+                <ol>
                     <a href="french.html">Fr</a
                     ><a href="english.html">En</a
                     ><a href="dutch.html">Nl</a>
-                </ol>---></a
+                </ol></a
             >
-            <div class="rappel">
-                Rappel : N'oubliez pas notre rendez-vous du
-            </div>
+            <label class="rappel">
+                <input
+                    type="text"
+                    name="rappel"
+                    value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
+                />
+            </label>--><nav class="language">
+                <a href="" class = "navi"></a>
+                <form action = "" class="choice">
+                    <label>
+                    <select>
+                        <option value = "" >Langue </option>
+                        <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
+                        <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
+                        <option value ="english">English<a class ="en" href="english.html">En</a></option>
+                    </select>
+                    </label>
+                    <!--<input type = "Checkbox" id = "lang"/>
+                    <input type="submit" value ="Valider">
+                    <label for = "lang"></label>-->
+                </form>
+            </nav>
         </header>
 
-        <section id="main">
-            <aside class="main_menu">
+        <section id="main" style="background-color:cyan">
+            <article id="menu">
                 <header>
                     <i class="fas fa-bars"></i>
-                    <h1>Menu</h1>
-                </header>
-                <nav>
-                    <ol id="list">
-                        <a href="welcome.html">Accueil</a>
+                    <h2>Menu</h2>
+                    </header>
+                <ul id="list">
+                        <!--<a href="welcome.html">Accueil</a>-->
                         <a href="introduction.html">Présentation</a>
                         <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductors.html">Nos Chefs</a>
-                        <a href="evenements.html">Nos Evènements</a>
+                        <a href="conductor.html">Nos Chefs</a>
+                        <a href="events.html">Nos Evènements</a>
                         <a href="join_us.html">Nous rejoindre</a>
-                        <a href="members.html">Espace membre</a>
-                    </ol>
-                </nav>
-            </aside>
-        <section>
-            <h2>Nous rejoindre </h2>
-            <p>Pour nous rejoindre , nous devez:<br/>
-                <ul>
-                    <li>remplir le formulaire d'inscription en cliquant sur le lien ci-dessous;</li>
-                    <li>acquitter le montant de votre cotisation </li>
-                    <li>vous engager à venir tous les dimanche matins . En cas d'impossibilité, merci de contacter le Comité d'administration.</li>
+                        <a href="member.html">Espace membre</a>
                 </ul>
+                   
+            </article>
+            <article id = "page"
+                class = " page5"
+                style="background-color: cyan"
+            >
+                <h2>Nous rejoindre </h2>
+                <p>Pour nous rejoindre , nous devez:<br/>
+                    <ul>
+                        <li>remplir le formulaire d'inscription en cliquant sur le lien ci-dessous;</li>
+                        <li>vous acquitter le montant de votre cotisation avant la fin octobre </li>
+                        <li>vous engager à venir tous les dimanche matins . En cas d'impossibilité, merci de contacter le Comité d'administration.</li>
+                    </ul>
 
-            Nous vous offrons la possibilité de participer à une répétition.  
-            </p>
-            
-            <aside>
-                <header>Réservé aux membres</header>
-                <button> Se connecter</button> 
-            </aside>
+                Nous vous offrons la possibilité de participer gratuitement à une répétition.
+                </p>
+                <label action = "" id ="loginForm" method ="POST">
+                    <label>Nom<input type = "text" name ="Nom" placeholder ="Entrez votre nom">
+                    </label>
+                    <label>Prénom<input type = "text" name ="Prénom" placeholder ="Entrez votre prénom">
+                    </label>
+                    <label>Mot de passe
+                    <input type = "text" name ="password" placeholder ="Entrez votre mot de passe">
+                    </label>
+                    <label>Confirmation</label>
+                    <input type = "text" name ="confirmation" placeholder ="Confirmez votre mot de passe">
+                    </label>
+                    <label>Adresse
+                    <input type = "text" name ="address" placeholder ="Entrez votre adresse">
+                    </label>
+                    <label >Email
+                    <input type = "text" name ="email" placeholder ="Entrez votre email">
+                    </label>
+                    <label>Téléphone
+                    <input type = "text" name ="tel" placeholder ="Entrez votre numéro de téléphone">
+                    </label>
+                    <label>Mobile/Gsm
+                    <input type = "text" name ="mobile" placeholder ="Entrez votre numéro de gsm/mobile">
+                    </label>
+                    <label >Instrument joué>
+                    <input type = "text" name ="instrument" placeholder ="Préciser votre instrument">
+                    </label>
+                    <button type = "submit" name  ="submit" value ="Valider"  placeholder ="Valider"></button>
+                    <small></small>
+                </form>
+                <div class= "important">
+                    <i class="far fa-exclamation-triangle"></i>
+                    <p>
+                        Attention ! Votre inscription ne sera confirmée qu'à réception de votre cotisation.Rappel : votre cotisation nous est utile pour acquérir les partitions(certaines ont des droits d'auteur) et louer la salle de répétition.
+                    </p>
+                </div>
+                <!--<php>
+                    <a href="join_us.php"></a>
+                </php>--->
+            </article>
         </section>
         <footer id="footer">
             <article>
                 <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
-                    <span>tél: 0498 780 000</span>
-                    <span>email:info@musikama.com</span>
+                    <span>tél: 0470 206 157</span>
+                    <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        <i class="fab fa-facebook"></i>
-                        <a href="https://www.facebook.com/orchestrecamerata/ ">
+                        
+                        <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
         </footer>
-
+        <script> scr ="js/join_us.js"</script> 
+        <script>src ="js/frame.js"</script>
 
     </body>
 </html>

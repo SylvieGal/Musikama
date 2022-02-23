@@ -13,7 +13,7 @@
     @if (#member:active){$namepage==member}
 }
 @mixin page ($namepage){
-    @mixin grid {
+  
         .main_menu{
             grid-area:main_menu;
         }

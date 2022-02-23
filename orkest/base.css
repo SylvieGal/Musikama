@@ -1,4 +1,4 @@
-:root {
+/*:root {
     font-size: 12px;
 }
 * {
@@ -191,7 +191,7 @@ footer {
     background-color: rgb(247, 209, 178);
     border: 2px solid rgb(227, 158, 79);
 }
-ol {
+ul {
     list-style-type: none;
 }
 
