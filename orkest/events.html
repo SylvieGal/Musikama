@@ -1,0 +1,171 @@
+<? php session_start();?>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content="width=device-width, initial-scale=1" />
+        <meta name="title" content="index,nofollow"/>
+        <meta name="description" content=" L'aboutissement de tous nos efforts est deux ou trois spectacles annuels. L'une de nos soirées musicales est un concert de musique classique. Actuellement nous préparons un ambitieux projet de musique symphonique dite 'populaire'. "/>
+        <link rel = "stylesheet" href="css/normalizer.css"/>
+        <link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/fonts.css"/>
+
+        <link rel = "stylesheet" href ="css/frame.css"/>
+        <link rel = "stylesheet" href ="css/gsm/events.css" media="screen and (max-width:400px)"/>
+        <link rel = "stylesheet" href = "css/tablet/events.css" media = "screen and (max-width:900px)"/>
+        <link rel = "stylesheet" href ="css/desktop/events.css" media="screen and (min-width:900px)"/>
+            <script
+            src="https://kit.fontawesome.com/cadfef2fa3.js" async
+            crossorigin= "anonymous"
+        
+        ></script>
+        <title>Evènements</title>
+    </head>
+    <body>
+    <header id ="header" style="background-color: greenyellow">
+        <div class="headerintro">
+            <div class="logoicon">
+                <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
+            </div>
+            <h1 class="logo">Camerata</h1>
+            <p class="motto">Le plaisir de jouer ensemble</p>
+        </div>
+        <nav class ="language">
+            <a href="" class = "navp"></a>
+            <form action = "" class="box">
+                <label>
+                    <select>
+                        <option value ="français" href="french.html">FR</option>
+                        <option value ="nederlands" href="dutch.html">NL</option>
+                        <option value ="english" href="english.html">EN</option>
+                    </select>
+                </label>
+            </form>
+        </nav>
+
+    </header>
+
+    <section id="main">
+            <article id="menu" style = "background-color: aqua;" >
+                <div id="menugsm">
+                    <i class="fas fa-bars" id ="logomenu"></i>
+                    <form action=""  id = "menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id ="link">
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class = "page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
+                        </select>
+                    </form>
+                </div>
+                
+                <h2>Menu</h2>
+
+                <ul id="list">
+                    <li><a class = "page4" href="events.html">Nos Evènements</a></li>
+                    <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                    <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                    <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                    <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
+                    <li><a class = "page6" href="member.html">Espace-membre</a></li>
+                </ul>
+                                
+            </article>
+                        
+            <article id = "page" class="page4 " style="background-color: cyan">
+                <!--<header>Nos évènements</header>-->
+                <h1 class ="agenda" style="background-color:yellow">A vos agendas </h1>
+                <article class = "box_a_venir" style ="background-color:magenta">
+
+                    <article id= "a_venir">
+                        <div class =2022>
+                            <h2>Programme 2022</h2>
+                            <ul>
+                                <li >
+                                    <label for ="dateBirth"></label>
+                                    <input id="dateBirth" class="date" name = "date" placeholder = "Samedi 23 avril 2022 ">
+                                    <a target="_blank"></a>
+                                    <p> 19.00 : <span class = "firstletter">A</span>nniversaire de Camerata au centre culturel Le Moelie à Linkebeek</p>
+                                </li>
+                                <li>
+                                    <label for ="dateBirth1"></label>
+                                    <input id="dateBirth1" class="date" name = "date" placeholder = "Samedi 22 octobre 2022 ">
+                                    <a target="_blank"></a>
+                                    <p> 19.00 : <span class = "firstletter">A</span>nniversaire de Camerata à la maison de la Franc-maçonnerie à Bruxelles</p>
+                                </li>
+                                <li>
+                                    <label for ="dateEndYear"></label>
+                                    <input id="dateEndYear" class="date" name = "date" placeholder = "Samedi 17 décembre 2022 ">
+                                    <a target="_blank"></a>
+                                    <p> 19.00 : <span class = "firstletter">A</span>nniversaire de Camerata au centre culturel Le Moelie à Linkebeek</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class ="2023">
+                            <h2>Programme 2023</h2>
+                            <ul>
+                                <li></li>
+                                <li>
+                                    <label for ="dateConcert0"></label>
+                                    <input id= "dateConcert0"  class ="date" name="date" placeholder="Samedi 22 avril 2023">
+                                    <a target= "_blank"></a>
+                                    <p>19.00 : <span class = "firstletter">C</span>oncert annuel </p>
+                                    <label for ="dateConcert1"></label>
+                                    <input id="dateConcert1"  class ="date" name="date" placeholder="Mercredi 21 juin 2023" >
+                                    <a target="_blank"></a>
+                                    <p>16.00 : <span class = "firstletter">F</span>ête de la musique</p>
+                                    <label for ="dateConcert2"></label>
+                                    <input id="dateConcert2"  class ="date" name="date" placeholder="Samedi 16 décembre 2023 ">
+                                    <a target="_blank"></a>
+                                    <p>19.00 : <span class = "firstletter">C</span>oncert de Noël</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class ="2024">
+                            <h2>Programme 2024</h2>
+                            <ul>
+                                <li>
+                                    <label for ="dateFilm"></label>
+                                    <input id="dateFilm"  class ="date" name="date" placeholder ="Samedi 21 avril 2024 ">
+                                    
+                                    <p>19.00 : <span class = "firstletter">S</span>pectacle de musiques de films</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
+                <article class ="box_passed">
+                    <article id="passé">
+                      <h2 class = "passed">Evènements passés</h2>
+                    </article>
+                </article>
+            <!--    <form id = "time" name="time">
+                    Il reste : <label for ="days">jours</label><label for ="hours">heures</label><label for ="minutes">minutes</label><label for ="seconds">secondes</label> 
+                </form>--><!--affichage de l'horloge et arrêt quand day=date-->
+            </article>
+        </section>
+        <footer id="footer"  style = "background-color: red">
+            <article>
+                <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
+                <div class="contact">
+                    <span>tél: 0470.20.61.57</span>
+                    <span>email:info@cameratalinkebeek.be</span>
+                    <div>
+
+                        <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <p>Copyright Sylga. me@mysite.com</p>
+                </div>
+            </article>
+        </footer>
+        <script> scr ="js/frame.js"</script> 
+        <script> scr ="js/event_popup.js"</script> 
+        <script> scr ="js/events.js"</script> 
+    </body>
+</html>

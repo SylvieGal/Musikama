@@ -1,0 +1,356 @@
+<?php session_start() ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="index,nofollow" />
+    <meta name="description"
+        content=" Nous sommes un orchestre symphonique d'amateurs depuis 1980.Au départ nous jouions uniquement de la musique dite classique. Aujourd'hui notre programme s'est enrichi d'oeuvres de musique symphonique mais plus actuelles" />
+
+    <title>Qui sommes-nous?</title>
+    <link rel="alternate" hreflang="Fr" href="french.html" />
+    <link rel="alternate" hreflang="En" href="english.html" />
+    <link rel="alternate" hreflang="Nl" href="dutch.html" />
+    <link rel="stylesheet" href="main.css" />
+    <!--<link rel="stylesheet" href="css/normalizer.css" />-->
+    <!--<link rel = "stylesheet" href ="css/frame.css"/>-->
+    <!--<link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/fonts.css"/>
+        -->
+    <link rel="stylesheet" href="css/frame.css" media="screen and (max-width:400px)" />
+    <link rel="stylesheet" href="css/gsm/introduction.css" media="screen and (max-width:400px)" />
+    <link rel="stylesheet" href="css/tablet/introduction.css" media="screen AND (max-width:900px)" />
+    <link rel="stylesheet" href="css/desktop/introduction.css" media="screen AND (min-width:900px)" />
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/cadfef2fa3.js" async crossorigin="anonymous"></script>
+
+    <!--<script
+            src="https://kit.fontawesome.com/cadfef2fa3.js"
+            crossorigin="anonymous"
+            defer
+            ></script>-->
+</head>
+
+<body>
+    <header id="header" style="background-color: greenyellow">
+        <div class="headerintro">
+            <div class="logoicon">
+                <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
+            </div>
+            <h1 class="logo">Camerata</h1>
+            <p class="motto">Le plaisir de jouer ensemble</p>
+        </div>
+        <nav class="language">
+            <a href="" class="navp"></a>
+            <form action="" class="box">
+                <label>
+                    <select>
+                        <option value="français" href="french.html">FR</option>
+                        <option value="nederlands" href="dutch.html">NL</option>
+                        <option value="english" href="english.html">EN</option>
+                    </select>
+                </label>
+            </form>
+        </nav>
+
+    </header>
+
+    <section id="main">
+        <article id="menu" class="menu" style="background-color: aqua;">
+            <div id="menugsm">
+                <i class="fas fa-bars" id="logomenu"></i>
+                <form action="" id="menurun">
+                    <label for="link"></label>
+                    <select onchange="location =this.value" id="link">
+                        <option value="introduction.html" class="page1">Présentation</option>
+                        <option value="managers.html" class="page2">Nos Dirigeants</option>
+                        <option value="conductors.html" class="page3">Nos Chefs</option>
+                        <option value="events.html" class="page4">Nos Evènements</option>
+                        <option value="join_us.html" class="page5">Nous rejoindre</option>
+                        <option value="member.html" class="page6">Espace-membre</option>
+                    </select>
+                </form>
+
+            </div>
+
+            <h2>Menu</h2>
+
+            <ul id="list">
+
+                <li><a class="menulink" href="#introduction">Présentation</a></li>
+                <li><a class="menulink" href="#managers">Nos Dirigeants</a></li>
+                <li><a class="menulink" href="#conductors">Nos Chefs</a></li>
+                <li><a class="menulink" href="#events">Nos Evènements</a></li>
+                <li><a class="menulink" href="#join_us">Nous rejoindre</a></li>
+                <li><a class="menulink" href="#member">Espace-membre</a></li>
+            </ul>
+
+        </article>
+
+        <article id="introduction" class="page" style="background-color: magenta">
+            <div class="page1 presentation">
+                <p>
+                    Camerata est né,en 1980, du besoin de partager ce plaisir de jouer ensemble des oeuvres
+                    musicales.<br />
+                </p>
+                <p> Tout au long de ces années,nous avons gardé notre esprit de convivialité et renforcé notre envie
+                    d'interpréter des
+                    programmes aussi éclectiques que passionnants.<br />
+                </p>
+                <p>
+                    Aujourd'hui,nous sommes devenus un orchestre symphonique de musiciens amateurs de tous âges issus
+                    d'horizons diverses.<br />
+                </p>
+                <p>
+                    Ce qui nous rapproche? C'est le plaisir de jouer ensemble quelque soit le niveau de chacun.<br />
+                </p>
+                <div class="programma">
+                    <p>Si vous aimez, comme nous, interpréter:</p>
+                    <ul>
+                        <li>Beethoven, Mozart, Gried,...</li>
+                        <li>Brel,Cohen,..</li>
+                        <li>Musiques traditionnelles, musiques de films,...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="invit">
+                N'hésitez plus, rejoignez-nous en vous rendant sur notre
+                page
+                <a target="_blank" href="join_us.html"><span>Nous rejoindre</span></a>
+            </div>
+
+        </article>
+        <article id="conductors" class="page">
+
+            <h2 class="othertitle" style="background-color:rgb(180, 33, 180)">Nos chefs actuels</h2>
+            <div class="page3 ">
+                <article class="conductorone" style="background-color:violet">
+                    <a href="#Labaguet ">
+                        <figure>
+                            <img class="mi" src="mi.jpg" alt="photo_mi" />
+                            <figcaption>
+                                <h3><span class="firstletter">M</span>i <span class="firstletter">L</span>abaguet</h3>
+                                <p>Diplomé du conservatoire de Bruxelles (1er prix de Chef d'orchestre, de piano et de
+                                    harpe).<br /> Premier à réclamer sa pause café lors des répétitions
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="conductortwo" style="background-color:deepskyblue">
+                    <a href="#Paulo">
+                        <figure>
+                            <img class="walter" src="walter.jpg" alt="photo_walter" />
+                            <figcaption>
+                                <h3><span class="firstletter"> W</span>alter <span class="firstletter">P</span>aulo</h3>
+                                <p>Chef d'orchestre de renommée internationale a dirigé pour de grands
+                                    orchestres(Bruxelles, Liège, Paris, ...) et maîtrise aussi bien le violon ,le piano
+                                    et l'orgue que le biniou,la guimbarde.<br /> Ne se fait pas prier pour blaguer
+                                </p>
+                            </figcaption>
+
+                        </figure>
+                    </a>
+                </article>
+            </div>
+            <article class="others" style="background-color: goldenrod;">
+                <h2 class="othertitle" style="background-color:rgb(180, 33, 180)">Nos chefs précédents</h2>
+                <p>Ceux qui nous ont dirigés et avec qui nous avons eu aussi beaucoup de plaisirs musicaux :
+                <ul>
+                    <li><span class=" firstletter">F</span>rancis <span class="firstletter">M</span>ourey, chef
+                        d'orchestre français, violoncelliste professionnel </li>
+                    <li><span class=" firstletter">D</span>avid <span class=" firstletter">M</span>iller, chef
+                        d'orchestre américain de renommée internationale</li>
+                    <li><span class=" firstletter">L</span>aurent <span class=" firstletter">B</span>eeckmans, chef
+                        d'orchestre belge, pianiste, percussionniste et trompettiste </li>
+                    <li><span class=" firstletter">Q</span>uentin <span class=" firstletter">M</span>ourier, chef
+                        d'orchestre français, pianiste professionnel</li>
+                    <li><span class=" firstletter">G</span>abriele <span class=" firstletter">C</span>amacho, chef
+                        d'orchestre mexicain, percussionniste professionnel</li>
+                </ul>
+                </p>
+
+            </article>
+        </article>
+        <article id="events" class="page" style="background-color: cyan">
+            <!--<header>Nos évènements</header>-->
+            <h1 class="agenda" style="background-color:yellow">A vos agendas </h1>
+            <article class="box_a_venir" style="background-color:magenta">
+
+                <article id="a_venir">
+                    <div class=2022>
+                        <h2>Programme 2022</h2>
+                        <ul>
+                            <li>
+                                <label for="dateBirth"></label>
+                                <input id="dateBirth" class="date" name="date" placeholder="Samedi 23 avril 2022 ">
+                                <a target="_blank"></a>
+                                <p> 19.00 : <span class="firstletter">A</span>nniversaire de Camerata au centre culturel
+                                    Le Moelie à Linkebeek</p>
+                            </li>
+                            <li>
+                                <label for="dateBirth1"></label>
+                                <input id="dateBirth1" class="date" name="date" placeholder="Samedi 22 octobre 2022 ">
+                                <a target="_blank"></a>
+                                <p> 19.00 : <span class="firstletter">A</span>nniversaire de Camerata à la maison de la
+                                    Franc-maçonnerie à Bruxelles</p>
+                            </li>
+                            <li>
+                                <label for="dateEndYear"></label>
+                                <input id="dateEndYear" class="date" name="date" placeholder="Samedi 17 décembre 2022 ">
+                                <a target="_blank"></a>
+                                <p> 19.00 : <span class="firstletter">A</span>nniversaire de Camerata au centre culturel
+                                    Le Moelie à Linkebeek</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="2023">
+                        <h2>Programme 2023</h2>
+                        <ul>
+                            <li></li>
+                            <li>
+                                <label for="dateConcert0"></label>
+                                <input id="dateConcert0" class="date" name="date" placeholder="Samedi 22 avril 2023">
+                                <a target="_blank"></a>
+                                <p>19.00 : <span class="firstletter">C</span>oncert annuel </p>
+                                <label for="dateConcert1"></label>
+                                <input id="dateConcert1" class="date" name="date" placeholder="Mercredi 21 juin 2023">
+                                <a target="_blank"></a>
+                                <p>16.00 : <span class="firstletter">F</span>ête de la musique</p>
+                                <label for="dateConcert2"></label>
+                                <input id="dateConcert2" class="date" name="date"
+                                    placeholder="Samedi 16 décembre 2023 ">
+                                <a target="_blank"></a>
+                                <p>19.00 : <span class="firstletter">C</span>oncert de Noël</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="2024">
+                        <h2>Programme 2024</h2>
+                        <ul>
+                            <li>
+                                <label for="dateFilm"></label>
+                                <input id="dateFilm" class="date" name="date" placeholder="Samedi 21 avril 2024 ">
+
+                                <p>19.00 : <span class="firstletter">S</span>pectacle de musiques de films</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </article>
+            <article class="box_passed">
+                <article id="passé">
+                    <h2 class="passed">Evènements passés</h2>
+                </article>
+            </article>
+            <!--    <form id = "time" name="time">
+                    Il reste : <label for ="days">jours</label><label for ="hours">heures</label><label for ="minutes">minutes</label><label for ="seconds">secondes</label> 
+                </form>-->
+            <!--affichage de l'horloge et arrêt quand day=date-->
+        </article>
+        <article id="join_us" class="page" style="background-color: cyan">
+            <h2>Nous rejoindre </h2>
+            <p>Pour nous rejoindre, nous devez:<br />
+            <ul>
+                <li>remplir le formulaire d'inscription en cliquant sur le lien ci-dessous;</li>
+                <li>vous acquitter le montant de votre cotisation avant la fin octobre </li>
+                <li>vous engager à venir tous les dimanches matins. En cas d'impossibilité, merci de contacter le Comité
+                    d'administration.</li>
+            </ul>
+
+            Nous vous offrons la possibilité de participer gratuitement à une répétition.
+            </p>
+
+            <form method="post" action="submit_joinus.php" id="loginForm">
+                <div>
+                    <label for="nom">Nom</label>
+                    <span>Nom</span> <input type="text" id="nom" name="Nom" placeholder="Entrez votre nom" value="">
+                </div>
+                <div>
+                    <label for="Prenom">Prénom</label>
+                    <span>Prénom</span> <input type="text" id="Prenom" name="Prenom" placeholder="Entrez votre prénom"
+                        value="">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <span>Mot de passe</span> <input type="text" id="password" name="password"
+                        placeholder="Entrez votre mot de passe" value="">
+                </div>
+                <div>
+                    <label for="confirmation">Confirmation</label>
+                    <span>Confirmation</span> <input type="text" id="confirmation" name="confirmation"
+                        placeholder="Confirmez votre mot de passe" value="">
+                </div>
+                <div>
+                    <label for="address">Adresse</label>
+                    <span>Adresse</span> <input type="text" id="address" name="address"
+                        placeholder="Entrez votre adresse" value="">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <span>Email</span> <input type="text" id="email" name="email" placeholder="Entrez votre email"
+                        value="">
+                </div>
+                <div>
+                    <label for="tel">Téléphone</label>
+                    <span>Téléphone</span> <input type="text" id="tel" name="tel"
+                        placeholder="Entrez votre numéro de téléphone" value="">
+                </div>
+                <div>
+                    <label for="mobile">Mobile</label>
+                    <span>Mobile/Gsm</span> <input type="text" id="mobile" name="mobile"
+                        placeholder="Entrez votre numéro de gsm/mobile" value="">
+                </div>
+                <div>
+                    <label for="instrument">Instrument(s) joué(s)</label>
+                    <span>Instrument(s) joué(s)</span> <input type="text" id="instrument" name="instrument"
+                        placeholder="Préciser votre instrument" value="">
+                </div>
+                <small></small>
+                <button type="submit" name="submit" value="Valider"></button>
+            </form>
+
+
+            <div class="important">
+                <i class="far fa-exclamation-triangle"></i>
+                <p>
+                    Attention ! Votre inscription ne sera confirmée qu'à réception de votre cotisation.Rappel : votre
+                    cotisation nous est utile pour acquérir les partitions(certaines ont des droits d'auteur) et louer
+                    la salle de répétition.
+                </p>
+            </div>
+
+        </article>
+    </section>
+
+    <footer id="footer" style="background-color: red;">
+        <article>
+            <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
+            <div class="contact">
+                <span>tél: 0470.20.61.57</span>
+                <span>email:info@cameratalinkebeek.be</span>
+                <div>
+
+                    <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <p>Copyright Sylga. me@mysite.com</p>
+            </div>
+        </article>
+    </footer>
+    <script src="JS/frame.js"></script>
+    <script src="JS/event_popup.js" async></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+.member>p::first-letter{
+    font-size:3em;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";   
+    color:red;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";   
+}
+.help{
+    font-size: 3.3rem;
+    text-decoration: underline;
+}

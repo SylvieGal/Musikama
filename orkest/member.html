@@ -1,4 +1,6 @@
-
+<?php session_start()?>;
+import css/frame.css
+import frame.html
 <!DOCTYPE html>
 <html lang ="fr">
     <head>
@@ -10,82 +12,75 @@
         <title>Espace Membre</title>
 
         <!--<link rel="stylesheet" href="css/pages/member.css"/>-->
-        <link rel="stylesheet" href="css/normalizer.css" />
-        <link rel = "stylesheet" href ="css/frame.css"/>
+        <link rel = "stylesheet" href="css/normalizer.css" />
         <link rel = "stylesheet" href ="css/color.css"/>
         <link rel = "stylesheet" href ="css/fonts.css"/>
-        <link
-            rel="stylesheet"
-            href="css/tablet/member.css"
-            media="screen and (max-width:900px)"
-        />
-        <link
-            rel="stylesheet"
-            href="css/gsm/member.css"
-            media="screen and (max-width:400px)"
-        />
-
-        <link rel = "stylesheet" href="css/desktop/member.css" media =" screen and (min-width:900px)"/>
+        <link rel = "stylesheet" href ="css/frame.css"media="screen and (max-width:400px)"/>
+        <link rel = "stylesheet" href ="css/gsm/member.css" media = "screen and (max-width:400px)"/>
+        <link rel = "stylesheet" href ="css/tablet/member.css" media = "screen and (max-width:900px)"/>
+        <link rel = "stylesheet" href ="css/desktop/member.css" media = "screen and (min-width:900px)"/>
         <script
             src="https://kit.fontawesome.com/cadfef2fa3.js"
             crossorigin="anonymous"
             async
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"
+        crossorigin ="anonymous"
+        async
+        ></script>
+        
       
     </head>
    
     <body>
+        <?php include_once('header.php')?>
         <header id ="header" style="background-color: greenyellow">
             <div class="headerintro">
                 <i class="fa-solid fa-record-vinyl"></i>
                 <h1 id="logo">Camerata</h1>
                 <p id="motto">Le plaisir de jouer ensemble</p>
             </div>
-            <!--<a id="lang"
-                >Langue
-                <ol>
-                    <a href="french.html">Fr</a
-                    ><a href="english.html">En</a
-                    ><a href="dutch.html">Nl</a>
-                </ol></a
-            >
-            <label class="rappel">
-                <input
-                    type="text"
-                    name="rappel"
-                    value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
-                />
-            </label>-->
-            <nav class="language">
-                <a href="" class = "navi"></a>
+            <nav class ="language">
+                <a href="" class = "navp"></a>
                 <form action = "" class="box">
-                    <select>
-                        <option value = "" >Langue </option>
-                        <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
-                        <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
-                        <option value ="english">English<a class ="en" href="english.html">En</a></option>
-                    </select>
-                    <!--<input type = "Checkbox" id = "lang"/>
-                    <input type="submit" value ="Valider">
-                    <label for = "lang"></label>-->
+                    <label>
+                        <select>
+                            <option value ="français" href="french.html">FR</option>
+                            <option value ="nederlands" href="dutch.html">NL</option>
+                            <option value ="english" href="english.html">EN</option>
+                        </select>
+                    </label>
                 </form>
             </nav>
-        </header>
-
-        <section id="main" style="background-color:cyan">
-            <article id="menu">
-                <header>
+                
+        </header>       
+        <section id="main" >
+            <?php include_once('menu.php')?>
+            <article id="menu" style = "background-color: aqua">
+                <div class = "menugsm">
                     <i class="fas fa-bars"></i>
-                    <h2>Menu</h2>
-                    </header>
+                    <form action="" id=" menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id="link">
+                            <option value = "member.html" class = "page6">Espace-membre</option>
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class ="page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                        </select>                        
+                    </form>
+                </div>
+                <h2>Menu</h2>
+
                 <ul id="list">
-                        <a href="welcome.html">Accueil</a>
-                        <a href="introduction.html">Présentation</a>
-                        <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductor.html">Nos Chefs</a>
-                        <a href="events.html">Nos Evènements</a>
-                        <a href="join_us.html">Nous rejoindre</a>
-                        <a href="member.html">Espace membre</a>
+                        
+                        <li><a class = "page6" href="member.html">Espace-membre</a></li>
+                        <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                        <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                        <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                        <li><a class = "page4"  href="events.html">Nos Evènements</a></li>
+                        <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
                 </ul>
                    
             </article>
@@ -93,23 +88,41 @@
                     class="page6"
                     style="background-color: cyan"
                 >
+                    <?php include_once('member.php')?>
                     <div id="signin">
                         <h2>Réservé aux membres</h2>
+                        
                     <form action ="" id ="signinForm" method ="GET">
-                        <label for ="email">Email</label>
-                        <input type ="text" name ="email" placeholder ="Entrez votre email" value ="email"/>
-                        <label for = "password">Mot de passe </label>
-                        <input type ="text" name = "password" placeholder = "Entrez votre mot de passe "value ="email"/>
-                        <button type ="submit" name ="submit" placeholder="Valider" value ="Valider">Valider</button>
-                       <p>Vous avez oublié votre mot de passe? Cliquez ici <a href ="info@cameratalinkebeek.be"></a></p>
-                    </form> 
-                </div> 
+                        <div class="identification">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help"
+                                placeholder="you@exemple.com">
+                            <div id="email-help" class="form-text">L'email utilisé lors de la création de compte.</div>
+                        </div>
+                        <div class="identification">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+
+                    </div> 
                 <article id ="news">
-                    
-                    <a href ="news" >Actualités</a>
+                    <?php if (isset($loggedUser)):?>
+                    <?php foreach(get_news($new,$limit),$informations)?>
+                    <a href ="" >Actualités</a>
+                    <h1>Actualités</h1>
+                    <div>
+                        <?php
+                            echo $informations['title'];
+                            echo $informations['news'];
+                        ?>
+                        <?php endforeach?>
+                        <?php endif;?>
+                    </div>
                     <article class = "hebdo">
                         <h2>Dimanche prochain </h2>
-                        <p>
+                        <div>
                             <h3>Au programme:</h3>
                             <ul>
                                 <li>Star Wars</li>
@@ -117,51 +130,124 @@
                                 <li>La flûte enchantée</li>
                             </ul>
                             La répétition est confirmée dans notre local habituel. 
-                        </p>
+                        </div>
                     </article>
                     <article class = "Ste_Cecile">
                             <h2>Sainte Cécile </h2>
-                            <p>
-                                Cette année , nous espérons que nous serons en mesure de nous retrouver tous autour d'un verre et de collations.
-                                Dans cette optique , nous vous préparons une sainte Cécile différente des autres années avec:
+                            <div>
+                                <p>Cette année , nous espérons que nous serons en mesure de nous retrouver tous autour d'un verre et de collations.
+                                Dans cette optique , nous vous préparons une sainte Cécile différente des autres années avec:</p>
                                 <ul class= "summary">
-                                    <li> notre nouveau chef</li> 
+                                    
+                                    <li> la présentation des nouveaux musiciens </li> 
                                     <li>la présentation un projet que le Comité souhaite mener à bien dans les deux ans à venir.</li>
                                 </ul> 
                                 
-                                <span>Réservez cette date ! La présentation du projet sera assez longue mais bien nécessaire et passionnante par Alain et Anthony</span> 
-                            </p>
+                                <span>Réservez cette date ! La présentation du projet sera assez longue mais bien nécessaire et passionnante par Alain et Anthony</span>
+                            </div>
                     </article>
-                    <article class ="wanted">
+                    <article className="wanted">
                         <h2>Appel à de nouveaux musiciens </h2>
-                        <img src ="./images/247267108_6571221676285492_6170040274579046178_n.jpg"alt ="annonce pour trouver de nouveaux musiciens"/>
-                        <p>
-                            Vous êtes musicien et souhaitez vous essayer au jeu en orchestre symphonique?
-                            Camerata est assurément LA formation qu'il vous faut!
-                            Dans une ambiance toujours chaleureuse et amicale, nous prenons plaisir à découvrir les grands compositeurs classiques, mais également
-                            contemporains, d'ici et d'ailleurs. Et comme la musique ne connait aucune frontière, ni de temps, ni de lieu, ni de style,
+        
+                        <div className="help "> Merci de bien vouloir diffuser largement notre appel à de nouveaux musiciens </div>
+        
+                        <img src="./images/247267108_6571221676285492_6170040274579046178_n.jpg"
+                             alt="annonce pour trouver de nouveaux musiciens"/>
+        
+        
+                            <p>Vous êtes musicien et souhaitez vous essayer au jeu en orchestre symphonique?
+                            Camerata est assurément LA formation qu&apos;il vous faut!
+                            Dans une ambiance toujours chaleureuse et amicale, nous prenons plaisir à découvrir les grands
+                            compositeurs classiques, mais également
+                            contemporains, d&apos;ici et d&apos;ailleurs. Et comme la musique ne connait aucune frontière, ni de temps, ni
+                            de
+                            lieu, ni de style,
                             notre prochain projet sera entièrement dédié à la musique de film.
                         </p>
+                    </article>
+                    <article className="contribution">
+                    
+                        <h3>Cotisation</h3>
+                        <p> La cotisation annuelle de 30euros par personne est obligatoire afin d&apos;acquérir les
+                            partitions
+                            pour le programme de la nouvelle année. Elle doit être versée avant la fin du mois de septembre.
+                            La cotisation te permet de participer aux destinées de l&apos;orchestre en prenant part au vote
+                            à
+                            l&apos;assemblée générale.
+                        </p>
+                        <div className="payment">
+    
+                            <label htmlFor="pay">Paiement</label>
+                            <fieldset>
+                                <legend>Choose your card :</legend>
+    
+                                <div>
+                                    <input type="checkbox" id="Bancontact" name="Bancontact"
+                                           checked></input>
+                                    <label htmlFor="Bancontact">Bancontact</label>
+                                    <span>Carte</span> <input type="text" id="pay" name="pay" placeholder="Entrez votre numéro de carte"
+                                              value=""></input>
+                                    <span>Expiration date </span> <input type="text" id="expired" name="expired" placeholder=""
+                                                         value=""></input>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Visa" name="Visa"
+                                           checked></input>
+                                    <label htmlFor="Visa">Visa</label>
+                                    <span>Carte</span> <input type="text" id="pay" name="pay" placeholder="Entrez votre numéro de carte"
+                                              value=""></input>
+                                    <span>CVV</span> <input type="text" id="checkdigitcard" name="checkdigitcard" placeholder=""
+                                                            value=""></input>
+                                    <span>Expiration date </span> <input type="text" id="expired" name="expired" placeholder=""
+                                                                        value=""></input>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Mastercard" name="Mastercard"
+                                           checked></input>
+                                    <label htmlFor="Mastercard">Mastercard</label>
+                                    <span>Carte</span> <input type="text" id="pay" name="pay" placeholder="Entrez votre numéro de carte"
+                                              value=""></input>
+                                    <span>CVV</span> <input type="text" id="checkdigitcard" name="checkdigitcard" placeholder=""
+                                                            value=""></input>
+                                    <span>Expiration date </span> <input type="text" id="expired" name="expired" placeholder=""
+                                                         value=""></input>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Paypal" name="Paypal"
+                                           checked></input>
+                                    <label htmlFor="Paypal">Paypal</label>
+                                    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=YOUR_COMPONENTS"></script>
+
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="QR" name="QR code" checked></input>
+                                    <label htmlFor="QR">Qr Code </label>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+
+                                </div>
+                            </fieldset>
+                        </div>
                     </article>
                 </article>
             </article>
         </section>
-        <footer id="footer">
+        <footer id="footer"  style = "background-color: red;">
+            <?php include_once('footer.php')?>
             <article>
                 <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
-                    <span>tél: 0498 780 000</span>
+                    <span>tél: 0470.20.61.57</span>
                     <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        
+        
                         <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
-        </footer> 
-        <script> scr ="js/member.js"</script> 
-        <script>src = "js/frame.js"</script>
+        </footer>
+        <script src ="JS/frame.js" ></script>
+        <script src ="JS/event_popup.js" async></script>
     </body>
 </html>

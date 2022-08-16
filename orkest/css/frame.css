@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(243, 229, 203);
+}
+#header {
+    grid-area: header;
+}
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-gap: 30px;
+    grid-template-rows: 170px auto auto;
+
+    padding: 12px;
+    margin: 0;
+}
+h1 {
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.headerintro {
+    grid-area: headerintro;
+}
+.language {
+    grid-area: language;
+}
+#header {
+    display: grid;
+    grid-template-areas: "headerintro headerintro language";
+    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: 5fr 5fr 1fr;
+    padding: 0;
+    position: relative;
+} /*padding:0 1rem dans la def de grid navbar permet de placer les elements*/
+.headerintro,
+#menu,
+footer {
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.logoicon {
+    grid-area: logoicon;
+}
+.logo {
+    grid-area: logo;
+}
+.motto {
+    grid-area: motto;
+}
+.headerintro {
+    display: grid;
+    grid-template-areas:
+        "logoicon logo"
+        "motto motto";
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+}
+.logoicon {
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    top: 5vh;
+    left: 5vw;
+}
+
+.logo .motto {
+    margin: 0;
+    text-align: center;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.logo {
+    margin: 0;
+    position: relative;
+    bottom: -6vh;
+    left: -2vw;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.motto {
+    position: relative;
+    margin: 0;
+    left: 13vw;
+    bottom: -6vh;
+    font-size: 1.75rem;
+}
+
+.fr {
+    grid-area: fr;
+}
+.en {
+    grid-area: en;
+}
+.nl {
+    grid-area: nl;
+}
+.language {
+    display: grid;
+    grid-template-areas:
+        "fr fr"
+        "en en"
+        "nl nl";
+    grid-template-columns: 1fr;
+    padding: 10px 15px 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+.navp {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 1.2rem;
+}
+
+#main {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+#page {
+    font-size: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+#page > p::first-letter {
+    font-size: 3em;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    color: red;
+}
+
+#menu {
+    width: 100%;
+    height: 50%;
+    overflow-wrap: break-word;
+    /* border-right-color: silver ;*/
+    opacity: 0;
+}
+
+#menu h2 {
+    text-align: center;
+    padding: 0;
+    font-size: 3rem;
+    opacity: 0;
+}
+#list {
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    font-size: 1.7rem;
+    opacity: 0;
+    list-style-type: none;
+}
+
+/*.menugsm{
+    position:relative;
+    bottom:-2vh;
+    left:1vw;
+}*/
+#logomenu {
+    display: flex;
+    margin: 0;
+    padding: 5px 0 0 5px;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+}
+#menurun {
+    position: absolute;
+    left: 5vw;
+    top: -2.6vh;
+}
+#link {
+    display: flex;
+    position: absolute;
+    top: 32vh;
+    left: 10vw;
+    opacity: 1;
+}
+#main > p {
+    text-indent: 30%;
+}
+
+header,
+#main,
+footer {
+    border-radius: 5px;
+    padding: 0;
+    background-color: rgb(247, 209, 178);
+}
+header,
+menu,
+footer {
+    border: 2px solid rgb(227, 158, 79);
+}
+ul {
+    list-style-type: none;
+}
+
+#main {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: 65px auto;
+    grid-template-columns: 1fr;
+
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+#main > p::first-letter {
+    font-size: 3em;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    color: red;
+}
+#footer {
+    padding: 12px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#footer > div {
+    display: flex;
+}
+
+#footer p {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+
+#footer a {
+    position: absolute;
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: blue;
+}

@@ -1,0 +1,24 @@
+.cardtype>label{
+    margin-right:20px;
+}
+.cardtype>input{
+    margin-left:1rem;
+    margin-right: 10px;
+}
+.carddetails{
+    margin: 1rem;
+}
+.carddetails>#pay{
+    margin:0 10px 0 20px;
+    width: 150px;
+}
+.cardsecure>#exp,.cardsecure>#checkdigitcard{
+    width: 70px;
+}
+button{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    text-decoration-color: white;
+    background-color:blue;
+}

@@ -1,145 +1,154 @@
+<?php session_start();?>
+
+import css/frame.css
+import frame.html
+
 <!DOCTYPE html>
 <html lang ="fr">
     
     <head>
-        <meta charset ="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="title" content="index,nofollow"/>
-        <meta name ="description" content=" Envie de rejoindre un orchestre symphonique d'amateurs? Notre comité de direction est composé de Anne, Anthony Lebon, Colette, Gisèle Boulet, Martine Dhoore et Mathieu. L'enthousiasme et l'ouverture d'esprit de notre Comité de direction font que tout l'orchestre donne vie à toutes nouvelles partitions "/>
-        <link rel="stylesheet" href="css/normalizer.css" />
-        <link rel = "stylesheet" href ="css/frame.css"/>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+        <meta name = "title" content = "index,nofollow"/>
+        <meta name = "description" content = " Envie de rejoindre un orchestre symphonique d'amateurs? Notre comité de direction est composé de Anne Lejeune, Anthony Lebon, Colette, Gisèle Boulet, Martine Dhoore et Mathieu Bonnami. L'enthousiasme et l'ouverture d'esprit de notre Comité de direction font que tout l'orchestre donne vie à toutes nouvelles partitions "/>
+        <link rel = "stylesheet" href = "css/normalizer.css" />
+        <link rel = "stylesheet" href = "css/frame.css"media="screen and (max-width:400px)"/>/>
+        <link rel = "stylesheet" href = "css/gsm/managers.css" media="screen and (max-width:400px)"/>
+        <link rel = "stylesheet" href = "css/desktop/managers.css" media="screen and (min-width:900px)"/>
+        <link rel = "stylesheet" href = "css/tablet/managers.css" media = "screen and (max-width:900px)"/>
         <link rel = "stylesheet" href ="css/color.css"/>
         <link rel = "stylesheet" href ="css/fonts.css"/>
         
         <title>Nos dirigeants</title>
         
-        <link
-            rel="stylesheet"
-            href="css/managers_desktop.css"
-            media="screen and (min-width:1000px)"
-        />
-        <link
-            rel="stylesheet"
-            href="css/gsm/managers.css"
-            media="screen and (max-width:400px)"
-        />
-        <link rel = "stylesheet" href = "css/tablet/managers.css" media = "screen and (max-width:1000px)"/>
         <script
-            src="https://kit.fontawesome.com/cadfef2fa3.js"
-            crossorigin="anonymous"
-            async
-        ></script>
-        
-        
+            src="https://kit.fontawesome.com/cadfef2fa3.js" async crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header id ="header" style="background-color: greenyellow">
             <div class="headerintro">
-                <i class="fa-solid fa-record-vinyl"></i>
-                <h1 id="logo">Camerata</h1>
-                <p id="motto">Le plaisir de jouer ensemble</p>
+                <div class="logoicon">
+                    <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
+                </div>
+                <h1 class="logo">Camerata</h1>
+                <p class="motto">Le plaisir de jouer ensemble</p>
             </div>
-            <a id="lang"
-                >Langue
-                <!--<ol>
-                    <a href="french.html">Fr</a
-                    ><a href="english.html">En</a
-                    ><a href="dutch.html">Nl</a>
-                </ol>--></a
-            >
-            <!--<label class="rappel">
-                <input
-                    type="text"
-                    name="rappel"
-                    value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
-                />
-            </label>-->
+            <nav class ="language">
+                <a href="" class = "navp"></a>
+                <form action = "" class="box">
+                    <label>
+                        <select>
+                            <option value ="français" href="french.html">FR</option>
+                            <option value ="nederlands" href="dutch.html">NL</option>
+                            <option value ="english" href="english.html">EN</option>
+                        </select>
+                    </label>
+                </form>
+            </nav>
+                
         </header>
 
-        <section id="main" style="background-color:cyan">
-            <article id="menu">
-                <header>
-                    <!--<i class="fas fa-bars"></i>-->
-                    <h2>Menu</h2>
-                    </header>
+        <section id="main" >
+            <article id="menu" style = "background-color: aqua;" >
+                <div id = "menugsm">
+                    <i class="fas fa-bars" id ="logomenu"></i>
+                    <form action=""  id = "menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id ="link">
+                            <option value = "managers.html" class = "page2">Nos Dirigeants</option>
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
+                        </select>
+                    </form>
+                    
+                </div>
+                           
+                <h2>Menu</h2>
+
                 <ul id="list">
-                        <a href="introduction.html">Présentation</a>
-                        <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductor.html">Nos Chefs</a>
-                        <a href="events.html">Nos Evènements</a>
-                        <a href="join_us.html">Nous rejoindre</a>
-                        <a href="member.html">Espace membre</a>
+                        
+                    <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                    <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                    <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                    <li><a class = "page4"  href="events.html">Nos Evènements</a></li>
+                    <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
+                    <li><a class = "page6" href="member.html">Espace-membre</a></li>
                 </ul>
                    
             </article>
-            <article id = "page"
-                class = " page2"
-                style="background-color: cyan"
+   
+            <article id = "page managers"
+                style="background-color: magenta"
             >
-    
-    
-            
-                <article><h2> La Miret</h2>
-                <a href="la.jpg" target="_blank"><img class="la" src="la.jpg" alt="photo_la"/></a>
-                <p>
-                    Président .44ans. Contrebasse. Nous prépare des gourmandises pour la pause café.
-                    
-                </p>
-                </article>
-                <article><h2>Do Cim</h2>
-                    <a href="do.jpg" target="_blank"><img class="do"src="do.jpg" alt="photo_do" /></a>
+                <div class= "page2 dirigeant">
+                <article>
+                    <h2> <span>L</span>a  <a target = "_blank"></a> <span>M</span>iret</h2>
+                    <a href="la.jpg" target="_blank"><img class="la" src="la.jpg" alt="photo_la"/></a>
                     <p>
-                        Secretaire.70ans. Pensionné Alerte. Alto.
+                        Président. 44ans. Contrebasse. Nous prépare des gourmandises pour la pause café.
+                    </p>
+                </article>
+                <article>
+                    <h2> <span class =" firstletter">D</span>o  <a target="_blank"></a> <span class =" firstletter">C</span>im</h2>
+                    <a href="do.jpg" target="_blank"> <img class="do" src="do.jpg" alt="photo_do"/></a>
+                    <p>
+                        Secretaire. 70ans. Pensionné Alerte. Alto.
                         Toujours pret pour le café .
                         Ne se fait pas prier pour blaguer 
                     </p>
-                </article>
-                <article><h2>Si Gogne</h2>
-                    <a href="si.jpg" target="_blank"><img class="si"src="si.jpg" alt="photo_si"/></a>
+                </article> 
+                <article>
+                    <h2> <span class =" firstletter">S</span>i  <a target="_blank"></a> <span class =" firstletter">G</span>ogne</h2>
+                    <a href="si.jpg" target="_blank"><img class="si" src="si.jpg" alt="photo_si"/></a>
                 
                     <p>
-                        Trésorière.30ans responsable de service logistique. Flûte.
-                        Toujours prete pour le café .
+                        Trésorière. 30ans. Responsable de service logistique. Flûte.
+                        Toujours prête pour le café .
                         
                     </p>
                 </article>
-                <article><h2>Sol Ho</h2>
-                    <a href="sol.jpg" target="_blank"><img class="sol"src="sol.jpg" alt="photo_sol"/></a> 
-                
+                <article>
+                    <h2><span class =" firstletter">S</span>ol  <a target="_blank"></a> <span class =" firstletter">H</span>o</h2>
+                    <a href="sol.jpg" target="_blank"><img class="sol" src="sol.jpg" alt="photo_sol"/></a>
                     <p>
-                        Relations Exterieures.50ans.Professeur des écoles. Trombone et piano.
+                        Relations Exterieures. 50ans. Professeur des écoles. Trombone et piano.
                         Toujours ponctuel pour accueillir nos membres et nos futurs membres. 
                         
                     </p>
                 </article>
-                <article><h2>Fa Rey</h2>
-                    <a href="fa.jpg" target="_blank"><img class="fa"src="fa.jpg" alt="photo_fa" /></a> 
+                <article>
+                    <h2><span class =" firstletter">F</span>a  <a target="_blank"></a> <span class =" firstletter">R</span>ey</h2>
+                    <a href="fa.jpg" target="_blank"><img class="fa" src="fa.jpg" alt="photo_fa" /></a>
                     <p>
-                        Coordinatrice de projet .45ans.Directrice de Richesses Humaines. Violoncelle et Harpe 
-                        Toujours à l'écoute de vos idées .
+                        Coordinatrice de projet. 45ans. Directrice de Richesses Humaines. Violoncelle et Harpe. 
+                        Toujours à l'écoute de vos idées.
                         
                     </p>
                 </article>
+                </div>
             </article>
         </section>    
-        
-            
-        <footer id="footer">
+        <footer id="footer"  style = "background-color: red;">
             <article>
-                <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
+                <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
-                    <span>tél: 0470.206.157</span>
+                    <span>tél: 0470.20.61.57</span>
                     <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        <i class="fab fa-facebook"></i>
-                        <a href="https://www.facebook.com/orchestrecamerata/ ">
+        
+                        <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
-        </footer>        
-        <script> scr ="js/manager.js"</script> 
-        <script> scr ="js/frame.js"</script> 
+        </footer>
+        <script src ="JS/frame.js" ></script>
+        <script src="JS/managers.js"></script>
+        <script src ="JS/event_popup.js" async></script>
     </body>
 </html>

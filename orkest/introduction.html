@@ -1,5 +1,7 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
-<html lang="fr"  >
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,30 +13,30 @@
         <link rel ="alternate" hreflang ="En" href ="english.html"/>
         <link rel ="alternate" hreflang ="Nl" href ="dutch.html"/>
         <link rel="stylesheet" href="css/normalizer.css" />
-        <!--<link rel = "stylesheet" href ="css/frame.css"/>-->
-        <!--<link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/color.css"/>
         <link rel = "stylesheet" href ="css/fonts.css"/>
-        -->
+
+        <link rel="stylesheet" href="css/frame.css" media="screen and (max-width:400px)"/>
         <link rel="stylesheet" href="css/gsm/introduction.css" media="screen and (max-width:400px)"/>
         <link rel="stylesheet" href ="css/tablet/introduction.css" media="screen AND (max-width:900px)"/>
-        <link rel="stylesheet" href ="css/desktop/introduction.css" media="screen AND (min-width:901px)"/>
-
-
+        <link rel="stylesheet" href ="css/desktop/introduction.css" media="screen AND (min-width:900px)"/>
+        
+        
         <script
-
-            src="https://kit.fontawesome.com/cadfef2fa3.js" async
-            crossorigin="anonymous"
-            defer
+        
+        src="https://kit.fontawesome.com/cadfef2fa3.js" async
+        crossorigin="anonymous"
         ></script>
         
-        <!--<script
+        <script
             src="https://kit.fontawesome.com/cadfef2fa3.js"
             crossorigin="anonymous"
             defer
-        ></script>-->
-    </head>
-    <body>
-        <header id ="header" style="background-color: greenyellow">
+            ></script>
+        </head>
+        <body>
+        <? php include_once('header.php') ?>
+        <!--<header id ="header" style="background-color: greenyellow">
             <div class="headerintro">
                 <div class="logoicon">
                     <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
@@ -55,26 +57,23 @@
                 </form>
             </nav>
                 
-        </header>
+        </header>-->
 
         <section id="main" >
-            <article id="menu" style = "background-color: aqua;" >
+            <?php include_once('menu.php') ?>
+            <!--<article id="menu" style = "background-color: aqua;" >
                 <div id = "menugsm">
-
-
                     <i class="fas fa-bars" id ="logomenu"></i>
                     <form action=""  id = "menurun">
-                       <!-- <label>-->
                         <label for="link"></label>
                         <select onchange ="location =this.value" id ="link">
-                                <option value = "introduction.html" class = "page1">Présentation</option>
-                                <option value = "managers.html" class = "page2">Nos Dirigeants</option>
-                                <option value = "conductors.html" class = "page3" >Nos Chefs</option>
-                                <option value = "events.html" class = "page4">Nos Evènements</option>
-                                <option value = "join_us.html" class = "page5">Nous rejoindre</option>
-                                <option value = "member.html" class = "page6">Espace-membre</option>
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class = "page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
                         </select>
-                        <!--</label>-->
                     </form>
                     
                 </div>
@@ -91,32 +90,49 @@
                     <li><a class = "page6" href="member.html">Espace-membre</a></li>
                 </ul>
                    
-            </article>
+            </article>-->
         
             
-            <article id ="page" class=" page1" style = "background-color: magenta;">
-                <div class="presentation">
+            <article id ="page introduction" style = "background-color: magenta">
+                <div div class="page1 presentation">
                     <p>
                             Camerata est né,en 1980, du besoin de partager ce plaisir de jouer ensemble des oeuvres musicales.<br/>
                     </p>
-                    <p>     Tout au long de ces années,nous avons gardé notre esprit de convivialité et renforcé notre envie d'interpréter des
-                        programmes aussi éclectiques que passionnants.<br/>
-                    </p>
+                    <p>     Tout au long de ces années,nous avons gardé et renforcé notre envie d'interpréter des programmes aussi éclectiques que passionnants.<br/>
+                    </p>                    
                     <p>
                             Aujourd'hui,nous sommes devenus un orchestre symphonique de musiciens amateurs de tous âges issus d'horizons diverses.<br/>
                     </p>
                     <p>
                             Ce qui nous rapproche? C'est le plaisir de jouer ensemble quelque soit le niveau de chacun.<br/>
                     </p>
+                </div>    
+                <div class ="wanted programma ">
+                    <br/>
+                    <h2> A<span>ppel à de nouveaux musiciens</span> </h2>
+                    <br/>
                     <p>
-                        Si vous aimez,comme nous, interpréter:
+                         
+                        Vous êtes musicien et souhaitez vous essayer au jeu en orchestre symphonique?
+                        
+                        Si vous aimez, comme nous, interpréter:</p>
                         <ul>
-                            <li>Beetoven, Mozart, Gried,...</li>
+                            <li>Beethoven, Mozart, Gried,...</li>
                             <li>Brel,Cohen,..</li>
                             <li>Musiques traditionnelles, musiques de films,...</li>
                         </ul>
+                    <p>Camerata est assurément LA formation qu'il vous faut!
+                        Dans une ambiance toujours chaleureuse et amicale, nous prenons plaisir à découvrir les grands compositeurs classiques, mais également
+                        contemporains, d'ici et d'ailleurs.
                     </p>
+                    <p>
+                        Et comme la musique ne connait aucune frontière, ni de temps, ni de lieu, ni de style,
+                        notre prochain projet sera entièrement dédié à la musique de film.
+                    </p>
+                    <!--<img src ="./images/247267108_6571221676285492_6170040274579046178_n.jpg" alt ="annonce pour trouver de nouveaux musiciens"/>-->
+                   
                 </div>
+                               
                 <div class="invit">
                    N'hésitez plus, rejoignez-nous en vous rendant sur notre
                    page
@@ -127,7 +143,8 @@
             
             </article>
         </section>
-        <footer id="footer"  style = "background-color: red;">
+        <? php include_once('footer.php') ?>
+        <!--<footer id="footer"  style = "background-color: red;">
             <article>
                 <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
@@ -141,7 +158,7 @@
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
-        </footer>
+        </footer>-->
         <script src ="JS/frame.js" ></script>
         <script src ="JS/event_popup.js" async></script>
 

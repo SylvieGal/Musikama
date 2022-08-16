@@ -1,0 +1,37 @@
+/* Menu */
+
+
+/* Pages */
+
+.page {
+    display: none;
+}
+.page.deactive {
+    animation-duration: 2s;
+    animation-name: page_transition_old;
+}
+.page.active {
+    display: block;
+    animation-duration: 2s;
+    animation-name: page_transition_new;
+}
+
+@keyframes page_transition_new {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+@keyframes page_transition_old {
+    from {
+        transform: translate(0%);
+        display: block;
+    }
+    to {
+        transform: translate(-100%);
+        display: none
+    }
+}

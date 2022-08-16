@@ -1,0 +1,10 @@
+.dirigeant>p::first-letter{
+    font-size: 3em;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    color: red;
+}
+h2>span::first-letter{
+    font-size: 2rem;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    color: rgb(55, 0, 255);
+}

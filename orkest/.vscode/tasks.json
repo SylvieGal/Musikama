@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "phpmyadmin",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "label": "npm: build - phpmyadmin",
+            "detail": "webpack"
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "path": "phpmyadmin",
+            "group": "none",
+            "problemMatcher": [],
+            "label": "npm: install - phpmyadmin",
+            "detail": "install dependencies from package"
+        }
+    ]
+}

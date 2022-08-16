@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: local();
+}
+
+@font-face {
+    font-family: "Brush Script MT";
+    src: url("https://freefontsdownload.net/free-brush-script-mt-font-37001.htm-webfont.eot") format("embedded-opentype"),
+        url("https://freefontsdownload.net/free-brush-script-mt-font-37001.htm-webfont.woff") format("woff"),
+        url("https://freefontsdownload.net/free-brush-script-mt-font-37001.htm-webfont.ttf") format("truetype"),
+        url("https://freefontsdownload.net/free-brush-script-mt-font-37001.htm-webfont.svg") format("svg");
+}
+@font-face {
+    font-family: "Brush Script Std";
+    src: url("https://freefontsdownload.net/free-brush-script-std-font-37019.htm-webfont.eot") format("embedded-opentype"),
+        url("https://freefontsdownload.net/free-brush-script-std-font-37019.htm-webfont.woff") format("woff"),
+        url("https://freefontsdownload.net/free-brush-script-std-font-37019.htm-webfont.ttf") format("truetype"),
+        url("https://freefontsdownload.net/free-brush-script-std-font-37019.htm-webfont.svg") format("svg");
+}
+@font-face {
+    font-family: "cursive ";
+    src: url("https://www.dafont.com/fr/cursive-2.font-webfont.eot") format("embedded-opentype"),
+        url("https://www.dafont.com/fr/cursive-2.font-webfont.woff") format("woff"),
+        url("https://www.dafont.com/fr/cursive-2.font-webfont.ttf") format("truetype"),
+        url("https://www.dafont.com/fr/cursive-2.font-webfont.svg") format("svg");
+}

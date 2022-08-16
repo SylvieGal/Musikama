@@ -35,59 +35,54 @@
  
     </head>
     <body>
-        <header>
-            <article id="header" style="background-color: greenyellow">
-                <div id="headerintro">
-                    <i class="fa-solid fa-record-vinyl"></i>
-                    <h1 id="logo">Camerata</h1>
-                    <p id="motto">Le plaisir de jouer ensemble</p>
-                </div>
-                <!--<a id="lang"
-                    >Langue
-                    <ol>
-                        <a href="french.html">Fr</a
-                        ><a href="english.html">En</a
-                        ><a href="dutch.html">Nl</a>
-                    </ol></a
-                >
-                <label id="rappel">
-                    <input
-                        type="text"
-                        name="rappel"
-                        value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
-                    />
-                </label>-->
-                <nav class="language">
-                    <a href="" class = "navi"></a>
-                    <form action = "" class="box">
+        <header id ="header" style="background-color: greenyellow">
+            <div class="headerintro">
+                <i class="fa-solid fa-record-vinyl"></i>
+                <h1 id="logo">Camerata</h1>
+                <p id="motto">Le plaisir de jouer ensemble</p>
+            </div>
+            <nav class ="language">
+                <a href="" class = "navp"></a>
+                <form action = "" class="box">
+                    <label>
                         <select>
-                            <option value = "" >Langue </option>
-                            <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
-                            <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
-                            <option value ="english">English<a class ="en" href="english.html">En</a></option>
+                            <option value ="français" href="french.html">FR</option>
+                            <option value ="nederlands" href="dutch.html">NL</option>
+                            <option value ="english" href="english.html">EN</option>
                         </select>
-                        <!--<input type = "Checkbox" id = "lang"/>
-                        <input type="submit" value ="Valider">
-                        <label for = "lang"></label>-->
-                    </form>
-                </nav>
-            </article>
-        </header>
-        <section id="main">
-            <article id="menu">
-                <header>
+                    </label>
+                </form>
+            </nav>
+                
+        </header>       
+        <section id="main" >
+            <article id="menu" style = "background-color: aqua">
+                <div class = "menugsm">
                     <i class="fas fa-bars"></i>
-                    <h2>Menu</h2>
-                </header>
+                    <form action="" id=" menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id="link">
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class ="page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
+                        </select>                        
+                    </form>
+                </div>
+                <h2>Menu</h2>
+
                 <ul id="list">
-                   <!--<a href = "welcome.html">Accueil</a>-->
-                    <a href="introduction.html">Présentation</a>
-                    <a href="managers.html">Nos Dirigeants</a>
-                    <a href="conductor.html">Nos Chefs</a>
-                    <a href="evenements.html">Nos Evènements</a>
-                    <a href="join_us.html">Nous rejoindre</a>
-                    <a href="member.html">Espace membre</a>
+                        
+                        <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                        <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                        <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                        <li><a class = "page4"  href="events.html">Nos Evènements</a></li>
+                        <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
+                        <li><a class = "page6" href="member.html">Espace-membre</a></li>
                 </ul>
+                   
             </article>
            <!-- <article id="page" style="background-color: cyan">
                 <div>Bienvenue chez Musikama</div>

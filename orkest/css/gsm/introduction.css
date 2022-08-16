@@ -1,0 +1,38 @@
+#menu{
+    opacity:1;
+}
+p{
+    font-size:1.5rem;
+}
+
+.menugsm{
+    position:relative;
+    bottom:-2vh;
+    left:1vw;
+}
+.presentation>p::first-letter,.wanted>p::first-letter ,.wanted>h2::first-letter,.programma>p::first-letter, .invit::first-letter{
+    font-size:3em;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";   
+    color:red;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+h2>span {
+    font-size:3.3rem;
+    text-decoration: underline;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";   
+}
+.invit{
+    padding:30px 0;
+    text-align:center;
+    
+}
+.invit span{
+    letter-spacing: 2px ;
+    font-size: 1.7rem;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    color:blue
+}

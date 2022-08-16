@@ -1,0 +1,51 @@
+.main_menu {
+    grid-area: main_menu;
+}
+.main_ceo {
+    grid-area: main_ceo;
+}
+#main {
+    display: grid;
+    grid-template-areas: "main_menu main_ceo";
+
+    grid-template-rows: 650px;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 1rem;
+}
+
+.ceo_one {
+    grid-area: ceo_one;
+}
+.ceo_two {
+    grid-area: ceo_two;
+}
+.ceo_three {
+    grid-area: ceo_three;
+}
+.ceo_four {
+    grid-area: ceo_four;
+}
+.ceo_five {
+    grid-area: ceo_five;
+}
+.ceo_six {
+    grid-area: ceo_six;
+}
+.main_ceo {
+    display: grid;
+    grid-template-areas:
+        "ceo_one ceo_two"
+        "ceo_three ceo_four"
+        "ceo_five ceo_six";
+
+    grid-template-rows: repeat(3, 215 px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+.main_ceo h2 {
+    padding: 1rem;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+#title #intro #chiefs #eve #signup #member {
+    display: none;
+}

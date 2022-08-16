@@ -1,0 +1,33 @@
+ 
+
+
+#page{
+    font-size: 20px;
+}
+.headerconductor {
+    grid-area: conductor_header;
+}
+.conductorone {
+    grid-area: conductorone;
+}
+.conductortwo {
+    grid-area: conductortwo;
+}
+#others {
+    grid-area: conductor_other;
+}
+#page {
+    display: grid;
+    grid-template-areas:
+        "headerconductor headerconductor"
+        "conductorone conductortwo"
+        "others others";
+    grid-template-rows: 45px repeat(2, 290px) 120px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px
+}
+ h2 {
+    padding: 12px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+

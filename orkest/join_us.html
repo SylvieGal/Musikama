@@ -1,4 +1,5 @@
-<!DOCTYPE html >
+ <?php session_start();?>
+
 <html lang="fr">
     <head>
         <meta charset ="uft-8" />
@@ -7,158 +8,163 @@
         <meta name ="description" content="  Un orchestre symphonique où tout le monde est bienvenu.Tout musicien peut rejoindre notre .Aucun des musiciens ne passe une audition. Le plaisir de jouer d'un instrument avant tout ."/>
      
         <title>Adhésion</title>
-     
-        <link rel="stylesheet" href="css/normalizer.css" />
+        <link rel ="alternate" hreflang="Fr" href="french.html" />
+        <link rel ="alternate" hreflang ="En" href ="english.html"/>
+        <link rel ="alternate" hreflang ="Nl" href ="dutch.html"/>
+        <link rel ="stylesheet" href ="css/normalizer.css" />
         <link rel = "stylesheet" href ="css/frame.css"/>
+        <link rel = "stylesheet" href ="css/normalizer.css" />
         <link rel = "stylesheet" href ="css/color.css"/>
         <link rel = "stylesheet" href ="css/fonts.css"/>
-        <link
-            rel="stylesheet"
-            href="css/desktop/join_us.css"
-            media="screen and (min-width:900px)"
-        />
-        <link
-            rel="stylesheet"
-            href="css/gsm/join_us.css"
-            media="screen and (max-width:400px)"
-        />
+        <link rel = "stylesheet" href ="css/desktop/join_us.css" media="screen and (min-width:900px)"/>
+        <link rel = "stylesheet" href ="css/gsm/join_us.css" media ="screen and (max-width:400px)"/>
         <link rel ="stylesheet" href = "css/tablet/join_us.css" media = "screen and (max-width:1000px)"/>
         <script
             src="https://kit.fontawesome.com/cadfef2fa3.js"
             crossorigin="anonymous"
             async
         ></script>
-
-       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"
+                crossorigin="anonymous"
+                async
+        ></script>
 
     </head>
     <body>
-        <header id ="header" style="background-color: greenyellow">
+        <?php include('header.php') ?>
+        <!--<header id ="header" style="background-color: greenyellow">
             <div class="headerintro">
-                <i class="fas fa-music"></i>
-                <h1 id="logo">Camerata</h1>
-                <p id="motto">Le plaisir de jouer ensemble</p>
+                <div class="logoicon">
+                    <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
+                </div>
+                <h1 class="logo">Camerata</h1>
+                <p class="motto">Le plaisir de jouer ensemble</p>
             </div>
-            <!--<a id="lang"
-                >Langue
-                <ol>
-                    <a href="french.html">Fr</a
-                    ><a href="english.html">En</a
-                    ><a href="dutch.html">Nl</a>
-                </ol></a
-            >
-            <label class="rappel">
-                <input
-                    type="text"
-                    name="rappel"
-                    value="Rappel : N'oubliez pas notre rendez-vous du... à ..."
-                />
-            </label>--><nav class="language">
-                <a href="" class = "navi"></a>
-                <form action = "" class="choice">
+            <nav class ="language">
+                <a href="" class = "navp"></a>
+                <form action = "" class="box">
                     <label>
-                    <select>
-                        <option value = "" >Langue </option>
-                        <option value ="français">Français<a class = "fr" href="french.html">Fr</a></option>
-                        <option value="nederlands" >Nederlands<a class = "nl" href="dutch.html">Nl</a></option>
-                        <option value ="english">English<a class ="en" href="english.html">En</a></option>
-                    </select>
+                        <select>
+                            <option value ="français" href="french.html">FR</option>
+                            <option value ="nederlands" href="dutch.html">NL</option>
+                            <option value ="english" href="english.html">EN</option>
+                        </select>
                     </label>
-                    <!--<input type = "Checkbox" id = "lang"/>
-                    <input type="submit" value ="Valider">
-                    <label for = "lang"></label>-->
                 </form>
             </nav>
-        </header>
+                
+        </header>-->
 
-        <section id="main" style="background-color:cyan">
-            <article id="menu">
-                <header>
-                    <i class="fas fa-bars"></i>
-                    <h2>Menu</h2>
-                    </header>
+        <section id="main" >
+            <?php include('menu.php') ?>
+
+            <!--article id="menu" style = "background-color: aqua;" >
+                <div id = "menugsm">
+                    <i class="fas fa-bars" id ="logomenu"></i>
+                    <form action=""  id = "menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id ="link">
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "introduction.html" class = "page1">Présentation</option>
+                            <option value = "managers.html" class = "page2">Nos Dirigeants</option>
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
+                        </select>
+                    </form>
+                    
+                </div>
+                           
+                <h2>Menu</h2>
+
                 <ul id="list">
-                        <!--<a href="welcome.html">Accueil</a>-->
-                        <a href="introduction.html">Présentation</a>
-                        <a href="managers.html">Nos Dirigeants</a>
-                        <a href="conductor.html">Nos Chefs</a>
-                        <a href="events.html">Nos Evènements</a>
-                        <a href="join_us.html">Nous rejoindre</a>
-                        <a href="member.html">Espace membre</a>
+                    <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
+                    <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                    <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                    <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                    <li><a class = "page4"  href="events.html">Nos Evènements</a></li>
+                    <li><a class = "page6" href="member.html">Espace-membre</a></li>
                 </ul>
                    
-            </article>
-            <article id = "page"
-                class = " page5"
-                style="background-color: cyan"
-            >
-                <h2>Nous rejoindre </h2>
-                <p>Pour nous rejoindre , nous devez:<br/>
-                    <ul>
-                        <li>remplir le formulaire d'inscription en cliquant sur le lien ci-dessous;</li>
-                        <li>vous acquitter le montant de votre cotisation avant la fin octobre </li>
-                        <li>vous engager à venir tous les dimanche matins . En cas d'impossibilité, merci de contacter le Comité d'administration.</li>
-                    </ul>
+            </!--article>-->
+            
+       </section>
+       <article className="contribution">
+                    
+        <h3>Cotisation</h3>
+        <p> La cotisation annuelle de 30euros par personne est obligatoire afin d&apos;acquérir les
+            partitions
+            pour le programme de la nouvelle année. Elle doit être versée avant la fin du mois de septembre.
+            La cotisation te permet de participer aux destinées de l&apos;orchestre en prenant part au vote
+            à
+            l&apos;assemblée générale.
+        </p>
+        <div class="payment">
 
-                Nous vous offrons la possibilité de participer gratuitement à une répétition.
-                </p>
-                <label action = "" id ="loginForm" method ="POST">
-                    <label>Nom<input type = "text" name ="Nom" placeholder ="Entrez votre nom">
-                    </label>
-                    <label>Prénom<input type = "text" name ="Prénom" placeholder ="Entrez votre prénom">
-                    </label>
-                    <label>Mot de passe
-                    <input type = "text" name ="password" placeholder ="Entrez votre mot de passe">
-                    </label>
-                    <label>Confirmation</label>
-                    <input type = "text" name ="confirmation" placeholder ="Confirmez votre mot de passe">
-                    </label>
-                    <label>Adresse
-                    <input type = "text" name ="address" placeholder ="Entrez votre adresse">
-                    </label>
-                    <label >Email
-                    <input type = "text" name ="email" placeholder ="Entrez votre email">
-                    </label>
-                    <label>Téléphone
-                    <input type = "text" name ="tel" placeholder ="Entrez votre numéro de téléphone">
-                    </label>
-                    <label>Mobile/Gsm
-                    <input type = "text" name ="mobile" placeholder ="Entrez votre numéro de gsm/mobile">
-                    </label>
-                    <label >Instrument joué>
-                    <input type = "text" name ="instrument" placeholder ="Préciser votre instrument">
-                    </label>
-                    <button type = "submit" name  ="submit" value ="Valider"  placeholder ="Valider"></button>
-                    <small></small>
-                </form>
-                <div class= "important">
-                    <i class="far fa-exclamation-triangle"></i>
-                    <p>
-                        Attention ! Votre inscription ne sera confirmée qu'à réception de votre cotisation.Rappel : votre cotisation nous est utile pour acquérir les partitions(certaines ont des droits d'auteur) et louer la salle de répétition.
-                    </p>
+            <label for="pay"></label>
+            <fieldset>
+                <legend>Paiement </legend>
+
+                <div class = "card">
+                 
+                    <div class = "cardtype ">
+                        <input type = "checkbox" id = "Bancontact" name = "Bancontact"></input>
+                        <label for = "Bancontact">Bancontact</label>
+                   
+                        <input type="checkbox" id="Visa" name="Visa"></input>
+                        <label for="Visa">Visa</label>
+                    
+                        <input type="checkbox" id="Mastercard" name="Mastercard"
+                           ></input>
+                        <label for="Mastercard">Mastercard</label>
+                    </div>
+                    <div class="carddetails">
+                        <div class=" cardNumber"></div>
+                            <span>Carte</span> <input type="text" id="pay" name="pay" placeholder="Entrez votre numéro de carte"
+                                                value=""></input>
+                        </div>
+                        <div class ="cardsecure">
+                            <span>Expiration</span> <input type="text" id="exp" name="expired" placeholder=""
+                                                                                        value=""></input>
+                            <span>CVV</span> <input type="text" id="checkdigitcard" name="checkdigitcard" placeholder=""
+                                                    value=""></input>
+                        </div>
+                    </div>
+                    
                 </div>
-                <!--<php>
-                    <a href="join_us.php"></a>
-                </php>--->
-            </article>
-        </section>
-        <footer id="footer">
+                <div>
+                    <input type="checkbox" id="Paypal" name="Paypal"
+                           ></input>
+                    <label for="Paypal">Paypal</label>
+                    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=YOUR_COMPONENTS"></script>
+                </div>
+                <div>
+                    <input type="checkbox" id="QR" name="QR code" ></input>
+                    <label for="QR">Qr Code </label>
+                </div>
+                <button type="submit">Valider</button>
+            </fieldset>
+        </div>
+    </article>
+        <?php include('footer.php') ?>
+        <!--<footer id="footer"  style = "background-color: red;">
             <article>
-                <div class="adress">adresse:Hoollestr 47, B-1234 Linkebos</div>
+                <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
-                    <span>tél: 0470 206 157</span>
+                    <span>tél: 0470.20.61.57</span>
                     <span>email:info@cameratalinkebeek.be</span>
                     <div>
-                        
+        
                         <a href="https://www.facebook.com/orchestrecamerata/ "><i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <p>Copyright Sylga. me@mysite.com</p>
                 </div>
             </article>
-        </footer>
-        <script> scr ="js/join_us.js"</script> 
-        <script>src ="js/frame.js"</script>
+        </footer>-->
+        <script src ="JS/frame.js" ></script>
+        <script src ="JS/event_popup.js" async></script>
+        
 
     </body>
 </html>

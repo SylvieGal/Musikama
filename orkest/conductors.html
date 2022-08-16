@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -11,99 +12,98 @@
         <link rel ="alternate" hreflang ="En" href ="english.html"/>
         <link rel ="alternate" hreflang ="Nl" href ="dutch.html"/>
         <link rel="stylesheet" href="css/normalizer.css" />
-        <link rel = "stylesheet" href ="css/frame.css"/>
         <!--<link rel = "stylesheet" href ="css/color.css"/>
+        <link rel = "stylesheet" href ="css/frame.css"/>
             <link rel = "stylesheet" href ="css/fonts.css"/>-->
-        <link rel="stylesheet" href="css/gsm/conductors.css"media ="screen and (max-width:370px)"  />
-        <link rel="stylesheet" href="css/tablet/conductors.css"media="screen and (max-width:900px)"/>
-        <link rel="stylesheet" href="css/desktop/conductors.css"media="screen and (min-width:901px)"/>
+        
+        <link rel="stylesheet" href="css/frame.css" media="screen and (max-width:400px)"/>
+        <link rel="stylesheet" href="css/gsm/conductors.css" media ="screen and (max-width:400px)"  />
+        <link rel="stylesheet" href="css/tablet/conductors.css" media="screen and (max-width:900px)"/>
+        <link rel="stylesheet" href="css/desktop/conductors.css" media="screen and (min-width:900px)"/>
  <!--<link rel="stylesheet" href="css/gsm/frame.css"/>
  -->
         
         <script
-            src="https://kit.fontawesome.com/cadfef2fa3.js"
+            src="https://kit.fontawesome.com/cadfef2fa3.js" async
             crossorigin="anonymous"
-            defer
         ></script>
         
     </head>
     <body>
-        <header id ="header" style="background-color: greenyellow">
-            <div class="headerintro">
-                <div class="logoicon">
-                    <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
-                </div>
-                <h1 class="logo">Camerata</h1>
-                <p class="motto">Le plaisir de jouer ensemble</p>
+    <header id ="header" style="background-color: greenyellow">
+        <div class="headerintro">
+            <div class="logoicon">
+                <i class="fas fa-music "></i><i class="fas fa-music "></i><i class="fas fa-music "></i>
             </div>
-            <nav class ="language">
-                <a href="" class = "navp"></a>
-                <form action = "" class="box">
+            <h1 class="logo">Camerata</h1>
+            <p class="motto">Le plaisir de jouer ensemble</p>
+        </div>
+        <nav class ="language">
+            <a href="" class = "navp"></a>
+            <form action = "" class="box">
+                <label>
                     <select>
-                        <option value ="français">FR<a class = "fr" href="french.html"></a></option>
-                        <option value="nederlands" >NL<a class = "nl" href="dutch.html"></a></option>
-                        <option value ="english">EN<a class ="en" href="english.html"></a></option>
+                        <option value ="français" href="french.html">FR</option>
+                        <option value ="nederlands" href="dutch.html">NL</option>
+                        <option value ="english" href="english.html">EN</option>
                     </select>
-                    
-                </form>
-            </nav>
-                
-        </header>       
+                </label>
+            </form>
+        </nav>
+    </header>
         <section id="main" >
             <article id="menu" style = "background-color: aqua;" >
                 <div class = "menugsm">
                     <i class="fas fa-bars"></i>
-                    <form action="" name="choice">
-                        <select onchange ="location =this.value">
+                    <form action="" name="menurun">
+                        <label for="link"></label>
+                        <select onchange ="location =this.value" id = "link">
+                            <option value = "conductors.html" class = "page3" >Nos Chefs</option>
                             <option value = "introduction.html" class = "page1">Présentation</option>
                             <option value = "managers.html" class ="page2">Nos Dirigeants</option>
-                            <option value = "conductors.html" class = "page3" >Nos Chefs</value></option>
-                            <option value = "events.html" class = "page4">Nos Evènements</></option>
-                            <option value = "join_us.html" class = "page5">Nous rejoindre</value=></option>
-                            <option value = "member.html" class = "page6">Espace-membre</value=></option>
+                            <option value = "events.html" class = "page4">Nos Evènements</option>
+                            <option value = "join_us.html" class = "page5">Nous rejoindre</option>
+                            <option value = "member.html" class = "page6">Espace-membre</option>
                         </select>                        
                     </form>
                 </div>
                 <h2>Menu</h2>
 
                 <ul id="list">
-                        
-                        <a class = "page1" href="introduction.html">Présentation</a>
-                        <a class = "page2" href="managers.html">Nos Dirigeants</a>
-                        <a class = "page3" href="conductors.html">Nos Chefs</a>
-                        <a class = "page4"  href="events.html">Nos Evènements</a>
-                        <a class = "page5" href="join_us.html">Nous rejoindre</a>
-                        <a class = "page6" href="member.html">Espace-membre</a>
+
+                    <li><a class = "page3" href="conductors.html">Nos Chefs</a></li>
+                    <li><a class = "page1" href="introduction.html">Présentation</a></li>
+                    <li><a class = "page2" href="managers.html">Nos Dirigeants</a></li>
+                    <li><a class = "page4"  href="events.html">Nos Evènements</a></li>
+                    <li><a class = "page5" href="join_us.html">Nous rejoindre</a></li>
+                    <li><a class = "page6" href="member.html">Espace-membre</a></li>
                 </ul>
                    
             </article>
 
-            <article id = "page" class=" page3" >
+            <article id = "page conductors">
                 
-                <h2 class ="pagetitle"style="background-color:rgb(180, 33, 180)">Nos chefs actuels</h2>
-                <div class = "conductors">
+                <h2 class ="othertitle" style="background-color:rgb(180, 33, 180)">Nos chefs actuels</h2>
+                <div class = "page3 conductors">
                     <article class="conductorone" style="background-color:violet">
                         <a href="#Labaguet ">
                             <figure>
                                 <img class="mi" src="mi.jpg" alt="photo_mi" />
                                 <figcaption>
-                                    <h3>Mi Labaguet</h3>
-                                    <p>Diplomé du conservatoire de Bruxelles (1er prix de Chef d'orchestre, de piano et de harpe)<br/>
-                                        Premier à réclamer sa pause café lors des répétitions 
+                                    <h3><span class = "firstletter">M</span>i  <span class = "firstletter">L</span>abaguet</h3>
+                                    <p>Diplomé du conservatoire de Bruxelles (1er prix de Chef d'orchestre, de piano et de harpe).<br/> Premier à réclamer sa pause café lors des répétitions 
                                     </p>
                                 </figcaption>
                             </figure>
                         </a>
                     </article>
                     <article class="conductortwo" style="background-color:deepskyblue">
-                        <a href="#Paulo">
+                        <a href= "#Paulo">
                             <figure>
-                                <img class="walter"src="walter.jpg" alt="photo_walter"/>
+                                <img class="walter" src="walter.jpg" alt="photo_walter"/>
                                 <figcaption>
-                                    <h3>Walter Paulo</h3>
-                                    <p>Chef d'orchestre de renommée internationale a dirigé pour de grands orchestres(Bruxelles, Liège,Paris,...).<br/>
-                                        Maîtrise aussi le violon, le biniou,la guimbarde, l'orgue et le piano.<br/>
-                                        Ne se fait pas prier pour blaguer 
+                                    <h3><span class ="firstletter"> W</span>alter  <span class="firstletter">P</span>aulo</h3>
+                                    <p>Chef d'orchestre de renommée internationale a dirigé pour de grands orchestres(Bruxelles, Liège, Paris, ...) et maîtrise aussi bien le violon ,le piano et l'orgue que le biniou,la guimbarde.<br/> Ne se fait pas prier pour blaguer
                                     </p>
                                 </figcaption>
                                 
@@ -121,14 +121,12 @@
                             <li><span class =" firstletter">Q</span>uentin <span class =" firstletter">M</span>ourier, chef d'orchestre français, pianiste professionnel</li> 
                             <li><span class =" firstletter">G</span>abriele <span class =" firstletter">C</span>amacho, chef d'orchestre mexicain, percussionniste professionnel</li>
                         </ul>
-                        
                     </p>
                     
                 </article>
             </article>
         </section>
         <footer id="footer"  style = "background-color: red;">
-
             <article>
                 <div class="adress">adresse:Hollestr 47, B-1234 Linkebos</div>
                 <div class="contact">
@@ -143,8 +141,8 @@
                 </div>
             </article>
         </footer>
-        
-        <script>src = "js/event_popup.js"</script>
-        <script>src = "js/frame.js"</script>
+        <script src ="JS/frame.js" ></script>
+        <script src ="JS/conductors.js" ></script>
+        <script src ="JS/event_popup.js" async></script>
     </body>
 </html>
